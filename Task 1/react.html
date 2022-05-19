@@ -1,0 +1,987 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>PrimaThink Web Devlopment Training Co.</title>
+  </head>
+  <body>
+     <marquee><h2>PrimaThink Web Devlopment Training Co.</h2></marquee>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+     <a class="navbar-brand" href="#">
+      <img src="img/img1_navbar.jpg" alt="" width="30" height="30">
+        PrimaThink
+    </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="course.html">Course</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="faculty.html">Faculty</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="/langu" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Languages 
+           </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="html.html">HTML</a></li>
+              <li><a class="dropdown-item" href="css.html">CSS</a></li>
+              <li><a class="dropdown-item" href="javascript.html">JavaScript</a></li>
+              <li><a class="dropdown-item" href="php.html">PHP</a></li>
+              <li><a class="dropdown-item" href="bootstrap.html">Bootstrap</a></li>
+              <li><a class="dropdown-item" href="react.html">React</a></li>
+              </ul>
+            </li>
+             </li>
+          <li class="nav-item">
+            <a class="nav-link" href="books.html">Books</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Contact Us</a>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <br>
+    <h1>React</h1>
+    <img src="img/img6_card.jpg" alt="" width="300" height="300"> <br>
+    <br>
+      <p>React is an open source, JavaScript library for developing user interface (UI) in web application. React is developed and released by <b>Facebook</b>. Facebook is continuously working on the <i>React</i> library and enhancing it by fixing bugs and introducing new features. This tutorial starts with the architecture of React, how-to guide to setup projects, creating components, JSX and then walks through advanced concepts like state management, form programming, routing and finally conclude with step by step working example.</p>
+    <h1>Audience</h1>
+      <p>This tutorial is prepared for professionals who are aspiring to make a career in the field of developing front-end web application. This tutorial is intended to make you comfortable in getting started with the React concepts with examples.</p>
+    <h1>Prerequisites</h1>
+      <p>Before proceeding with the various types of concepts given in this tutorial, we assume that the readers have the basic knowledge in HTML, CSS and OOPS concepts. In addition to this, it will be very helpful, if the readers have a sound knowledge in JavaScript.</p>
+      <p>React library is built on a solid foundation. It is simple, flexible and extensible. As we learned earlier, React is a library to create user interface in a web application. React’s primary purpose is to enable the developer to create user interface using pure JavaScript. Normally, every user interface library introduces a new template language (which we need to learn) to design the user interface and provides an option to write logic, either inside the template or separately.</p>
+<p>Instead of introducing new template language, React introduces three simple concepts as given below &minus;</p>
+<h3>React elements</h3>
+<p>JavaScript representation of HTML DOM. React provides an API, <i><b>React.createElement</b></i> to <i>create React Element</i>.</p>
+<h3>JSX</h3>
+<p>A JavaScript extension to design user interface. JSX is an XML based, extensible language supporting HTML syntax with little modification. JSX can be compiled to React Elements and used to create user interface.</p>
+<h3>React component</h3>
+<p>React component is the primary building block of the React application. It uses React elements and JSX to design its user interface. React component is basically a JavaScript class (extends the <b><i>React.component</i></b> class) or pure JavaScript function. React component has properties, state management, life cycle and event handler. React component can be able to do simple as well as advanced logic.</p>
+<p>Let us learn more about components in the React Component chapter.</p>
+<h2>Workflow of a React application</h2>
+<p>Let us understand the workflow of a React application in this chapter by creating and analyzing a simple React application.</p>
+<p>Open a command prompt and go to your workspace.</p>
+<pre class="result notranslate">
+cd /go/to/your/workspace
+</pre>
+<p>Next, create a folder, <i>static_site</i> and change directory to newly created folder.</p>
+<pre class="result notranslate">
+mkdir static_site 
+cd static_site
+</pre>
+<h3>Example</h3>
+<p>Next, create a file, <i>hello.html</i> and write a simple React application.</p>
+<pre class="prettyprint notranslate">
+&lt;!DOCTYPE html&gt; 
+&lt;html&gt; 
+   &lt;head&gt; 
+      &lt;meta charset="UTF-8" /&gt; 
+      &lt;title&gt;React Application&lt;/title&gt; 
+   &lt;/head&gt; 
+   &lt;body&gt; 
+      &lt;div id="react-app"&gt;&lt;/div&gt; 
+      &lt;script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin&gt;&lt;/script&gt; 
+      &lt;script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin&gt;&lt;/script&gt; 
+      &lt;script language="JavaScript"&gt; 
+         element = React.createElement('h1', {}, 'Hello React!') 
+         ReactDOM.render(element, document.getElementById('react-app')); 
+      &lt;/script&gt; 
+   &lt;/body&gt; 
+&lt;/html&gt;
+</pre>
+<p>Next, serve the application using serve web server.</p>
+<pre class="result notranslate">
+serve ./hello.html
+</pre>
+<h3>Output</h3>
+<p>Next, open your favorite browser. Enter <b>http://localhost:5000</b> in the address bar and then press enter.</p>
+<p>Let us analyse the code and do little modification to better understand the React application.</p>
+<p>Here, we are using two API provided by the React library.</p>
+<h3>React.createElement</h3>
+<p>Used to create React elements. It expects three parameters &minus;</p>
+<ul class="list">
+<li>Element tag</li>
+<li>Element attributes as object</li>
+<li>Element content - It can contain nested React element as well</li>
+</ul>
+<h3>ReactDOM.render</h3>
+<p>Used to render the element into the container. It expects two parameters &minus;</p>
+<ul class="list">
+<li>React Element OR JSX</li>
+<li>Root element of the webpage</li>
+</ul>
+<h3>Nested React element</h3>
+<p>As <i><b>React.createElement</b></i> allows nested React element, let us add nested element as shown below &minus;</p>
+<p><b>Example</b></p>
+<pre class="prettyprint notranslate">
+&lt;script language="JavaScript"&gt;
+   element = React.createElement('div', {}, React.createElement('h1', {}, 'Hello React!'));
+   ReactDOM.render(element, document.getElementById('react-app')); 
+&lt;/script&gt;
+</pre>
+<p><b>Output</b></p>
+<p>It will generate the below content &minus;</p>
+<pre class="result notranslate">
+&lt;div&gt;&lt;h1&gt; Hello React!&lt;/h1&gt;&lt;/div&gt; 
+</pre>
+<h3>Use JSX</h3>
+<p>Next, let us remove the React element entirely and introduce JSX syntax as shown below &minus;</p>
+<pre class="prettyprint notranslate">
+&lt;!DOCTYPE html&gt; 
+&lt;html&gt; 
+   &lt;head&gt; 
+      &lt;meta charset="UTF-8" /&gt; 
+      &lt;title&gt;React Application&lt;/title&gt; 
+   &lt;/head&gt; 
+   &lt;body&gt; 
+      &lt;div id="react-app"&gt;&lt;/div&gt; 
+      &lt;script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin&gt;&lt;/script&gt; 
+      &lt;script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin&gt;&lt;/script&gt; 
+      &lt;script src="https://unpkg.com/@babel/standalone/babel.min.js"&gt;&lt;/script&gt; 
+      &lt;script type="text/babel"&gt; 
+         ReactDOM.render(
+            &lt;div&gt;&lt;h1&gt;Hello React!&lt;/h1&gt;&lt;/div&gt;, 
+            document.getElementById('react-app') 
+         ); 
+     &lt;/script&gt; 
+   &lt;/body&gt; 
+&lt;/html&gt;
+</pre>
+<p>Here, we have included babel to convert JSX into JavaScript and added <i>type=“text/babel”</i> in the script tag.</p>
+<pre class="result notranslate">
+&lt;script src="https://unpkg.com/@babel/standalone/babel.min.js"&gt;&lt;/script&gt; 
+&lt;script type="text/babel"&gt; 
+   ... 
+   ... 
+&lt;/script&gt;
+</pre>
+<p>Next, run the application and open the browser. The output of the application is as follows &minus;</p>
+<p>Next, let us create a new React component, Greeting and then try to use it in the webpage.</p>
+<pre class="result notranslate">
+&lt;script type="text/babel"&gt; 
+   function Greeting() {
+      return &lt;div&gt;&lt;h1&gt;Hello JSX!&lt;/h1&gt;&lt;/div&gt; 
+   } 
+   ReactDOM.render(&lt;Greeting /&gt;, document.getElementById('react-app') ); 
+&lt;/script&gt;
+</pre>
+<p>The result is same and as shown below &minus;</p>
+
+<p>By analyzing the application, we can visualize the workflow of the React application as shown in the below diagram.</p>
+
+<p>React app calls <b><i>ReactDOM.render</i></b> method by passing the user interface created using React component (coded in either JSX or React element format) and the container to render the user interface.</p>
+<p><b><i>ReactDOM.render</i></b> processes the JSX or React element and emits Virtual DOM.</p>
+<p>Virtual DOM will be merged and rendered into the container.</p>
+<h2>Architecture of the React Application</h2>
+<p>React library is just UI library and it does not enforce any particular pattern to write a complex application. Developers are free to choose the design pattern of their choice. React community advocates certain design pattern. One of the patterns is Flux pattern. React library also provides lot of concepts like Higher Order component, Context, Render props, Refs etc., to write better code. React Hooks is evolving concept to do state management in big projects. Let us try to understand the high level architecture of a React application.</p>
+
+<ul class="list">
+<li><p>React app starts with a single root component.</p></li>
+<li><p>Root component is build using one or more component.</p></li>
+<li><p>Each component can be nested with other component to any level.</p></li>
+<li><p>Composition is one of the core concepts of React library. So, each component is build by composing smaller components instead of inheriting one component from another component.</p></li>
+<li><p>Most of the components are user interface components.</p></li>
+<li><p>React app can include third party component for specific purpose such as routing, animation, state management, etc.</p></li>
+</ul>
+<p>React component is the building block of a React application. Let us learn how to create a new React component and the features of React components in this chapter.</p>
+<p>A React component represents a small chunk of user interface in a webpage. The primary job of a React component is to render its user interface and update it whenever its internal state is changed. In addition to rendering the UI, it manages the events belongs to its user interface. To summarize, React component provides below functionalities.</p>
+<ul class="list">
+<li>Initial rendering of the user interface.</li>
+<li>Management and handling of events.</li>
+<li>Updating the user interface whenever the internal state is changed.</li>
+</ul>
+<p>React component accomplish these feature using three concepts &minus;</p>
+<ul class="list">
+<li><p><b>Properties</b> &minus; Enables the component to receive input.</p></li>
+<li><p><b>Events</b> &minus; Enable the component to manage DOM events and end-user interaction.</p></li>
+<li><p><b>State</b> &minus; Enable the component to stay stateful. Stateful component updates its UI with respect to its state.</p></li>
+</ul>
+<p>Let us learn all the concept one-by-one in the upcoming chapters.</p>
+<h2>Creating a React component</h2>
+<p>React library has two component types. The types are categorized based on the way it is being created.</p>
+<ul class="list">
+<li>Function component &minus; Uses plain JavaScript function.</li>
+<li>ES6 class component &minus; Uses ES6 class.</li>
+</ul>
+<p>The core difference between function and class component are &minus;</p>
+<ul class="list">
+<li><p>Function components are very minimal in nature. Its only requirement is to return a <i>React element</i>.</p></li>
+</ul>
+<pre class="prettyprint notranslate">
+function Hello() { 
+   return '&lt;div&gt;Hello&lt;/div&gt;' 
+}
+</pre>
+<p>The same functionality can be done using ES6 class component with little extra coding.</p>
+<pre class="prettyprint notranslate">
+class ExpenseEntryItem extends React.Component {         
+   render() { 
+      return ( 
+         &lt;div&gt;Hello&lt;/div&gt; 
+      ); 
+   }
+}
+</pre>
+<ul class="list">
+<li><p>Class components supports state management out of the box whereas function components does not support state management. But, React provides a hook, <i>useState()</i> for the function components to maintain its state.</p></li>
+<li><p>Class component have a life cycle and access to each life cycle events through dedicated callback apis. Function component does not have life cycle. Again, React provides a hook, <i>useEffect()</i> for the function component to access different stages of the component.</p></li>
+</ul>
+<h2>Creating a class component</h2>
+<p>Let us create a new React component (in our expense-manager app), ExpenseEntryItem to showcase an expense entry item. Expense entry item consists of name, amount, date and category. The object representation of the expense entry item is &minus;</p>
+<pre class="prettyprint notranslate">
+{ 
+   'name': 'Mango juice', 
+   'amount': 30.00, 
+   'spend_date': '2020-10-10' 
+   'category': 'Food', 
+}
+</pre>
+<p>Open <i>expense-manager</i> application in your favorite editor.</p>
+<p>Next, create a file, <i>ExpenseEntryItem.css</i> under <i>src/components</i> folder to style our component.</p>
+<p>Next, create a file, <i>ExpenseEntryItem.js</i> under <i>src/components</i> folder by extending <i>React.Component</i>.</p>
+<pre class="prettyprint notranslate">
+import React from 'react'; 
+import './ExpenseEntryItem.css'; 
+class ExpenseEntryItem extends React.Component { 
+}
+</pre>
+<p>Next, create a method <i>render</i> inside the <i>ExpenseEntryItem</i> class.</p>
+<pre class="prettyprint notranslate">
+class ExpenseEntryItem extends React.Component { 
+   render() { 
+   } 
+}
+</pre>
+<p>Next, create the user interface using JSX and return it from <i>render</i> method.</p>
+<pre class="prettyprint notranslate">
+class ExpenseEntryItem extends React.Component {
+   render() {
+      return (
+         &lt;div&gt;
+            &lt;div&gt;&lt;b&gt;Item:&lt;/b&gt; &lt;em&gt;Mango Juice&lt;/em&gt;&lt;/div&gt;
+            &lt;div&gt;&lt;b&gt;Amount:&lt;/b&gt; &lt;em&gt;30.00&lt;/em&gt;&lt;/div&gt;
+            &lt;div&gt;&lt;b&gt;Spend Date:&lt;/b&gt; &lt;em&gt;2020-10-10&lt;/em&gt;&lt;/div&gt;
+            &lt;div&gt;&lt;b&gt;Category:&lt;/b&gt; &lt;em&gt;Food&lt;/em&gt;&lt;/div&gt;
+         &lt;/div&gt;
+      );
+   }
+}
+</pre>
+<p>Next, specify the component as default export class.</p>
+<pre class="prettyprint notranslate">
+import React from 'react';
+import './ExpenseEntryItem.css';
+
+class ExpenseEntryItem extends React.Component {
+   render() {
+      return (
+         &lt;div&gt;
+            &lt;div&gt;&lt;b&gt;Item:&lt;/b&gt; &lt;em&gt;Mango Juice&lt;/em&gt;&lt;/div&gt;
+            &lt;div&gt;&lt;b&gt;Amount:&lt;/b&gt; &lt;em&gt;30.00&lt;/em&gt;&lt;/div&gt;
+            &lt;div&gt;&lt;b&gt;Spend Date:&lt;/b&gt; &lt;em&gt;2020-10-10&lt;/em&gt;&lt;/div&gt;
+            &lt;div&gt;&lt;b&gt;Category:&lt;/b&gt; &lt;em&gt;Food&lt;/em&gt;&lt;/div&gt;
+         &lt;/div&gt;
+      );
+   }
+}
+export default ExpenseEntryItem;
+</pre>
+<p>Now, we successfully created our first React component. Let us use our newly created component in <i>index.js</i>.</p>
+<pre class="prettyprint notranslate">
+import React from 'react';
+import ReactDOM from 'react-dom';
+import ExpenseEntryItem from './components/ExpenseEntryItem'
+
+ReactDOM.render(
+   &lt;React.StrictMode&gt;
+      &lt;ExpenseEntryItem /&gt;
+   &lt;/React.StrictMode&gt;,
+   document.getElementById('root')
+);
+</pre>
+<h3>Example</h3>
+<p>The same functionality can be done in a webpage using CDN as shown below &minus;</p>
+<pre class="prettyprint notranslate">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;meta charset="UTF-8" /&gt;
+      &lt;title&gt;React application :: ExpenseEntryItem component&lt;/title&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;div id="react-app"&gt;&lt;/div&gt;
+       
+      &lt;script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin&gt;&lt;/script&gt;
+      &lt;script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin&gt;&lt;/script&gt;
+      &lt;script src="https://unpkg.com/@babel/standalone/babel.min.js"&gt;&lt;/script&gt;
+      &lt;script type="text/babel"&gt;
+         class ExpenseEntryItem extends React.Component {
+            render() {
+               return (
+                  &lt;div&gt;
+                     &lt;div&gt;&lt;b&gt;Item:&lt;/b&gt; &lt;em&gt;Mango Juice&lt;/em&gt;&lt;/div&gt;
+                     &lt;div&gt;&lt;b&gt;Amount:&lt;/b&gt; &lt;em&gt;30.00&lt;/em&gt;&lt;/div&gt;
+                     &lt;div&gt;&lt;b&gt;Spend Date:&lt;/b&gt; &lt;em&gt;2020-10-10&lt;/em&gt;&lt;/div&gt;
+                     &lt;div&gt;&lt;b&gt;Category:&lt;/b&gt; &lt;em&gt;Food&lt;/em&gt;&lt;/div&gt;
+                  &lt;/div&gt;
+               );
+            }
+         }
+         ReactDOM.render(
+            &lt;ExpenseEntryItem /&gt;,
+            document.getElementById('react-app') );
+      &lt;/script&gt;
+   &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+<p>Next, serve the application using npm command.</p>
+<pre class="result notranslate">
+npm start
+</pre>
+<h3>Output</h3>
+<p>Next, open the browser and enter <i>http://localhost:3000</i> in the address bar and press enter.</p>
+<pre class="result notranslate">
+Item: Mango Juice
+Amount: 30.00
+Spend Date: 2020-10-10
+Category: Food
+</pre>
+<!--<img src="/reactjs/images/class_component.jpg" alt="class component" />-->
+<h2>Creating a function component</h2>
+<p>React component can also be created using plain JavaScript function but with limited features. Function based React component does not support state management and other advanced features. It can be used to quickly create a simple component.</p>
+<p>The above <i>ExpenseEntryItem</i> can be rewritten in function as specified below &minus;</p>
+<pre class="prettyprint notranslate">
+function ExpenseEntryItem() {
+   return (
+      &lt;div&gt;
+         &lt;div&gt;&lt;b&gt;Item:&lt;/b&gt; &lt;em&gt;Mango Juice&lt;/em&gt;&lt;/div&gt;
+         &lt;div&gt;&lt;b&gt;Amount:&lt;/b&gt; &lt;em&gt;30.00&lt;/em&gt;&lt;/div&gt;
+         &lt;div&gt;&lt;b&gt;Spend Date:&lt;/b&gt; &lt;em&gt;2020-10-10&lt;/em&gt;&lt;/div&gt;
+         &lt;div&gt;&lt;b&gt;Category:&lt;/b&gt; &lt;em&gt;Food&lt;/em&gt;&lt;/div&gt;
+      &lt;/div&gt;
+   );
+}
+</pre>
+<p>React enables developers to create dynamic and advanced component using properties. Every component can have attributes similar to HTML attributes and each attribute’s value can be accessed inside the component using properties (props).</p>
+<p>For example, <i>Hello</i> component with a name attribute can be accessed inside the component through this.props.name variable.</p>
+<pre class="result notranslate">
+&lt;Hello name="React" /&gt;
+// value of name will be "Hello* const name = this.props.name
+</pre>
+<p>React properties supports attribute’s value of different types. They are as follows,</p>
+<ul class="list">
+<li>String</li>
+<li>Number</li>
+<li>Datetime</li>
+<li>Array</li>
+<li>List</li>
+<li>Objects</li>
+</ul>
+
+<p>Let us learn the basic command available in Create React App command line application in this chapter.</p>
+<h2>Creating a new application</h2>
+<p><i>Create React App provides</i> multiple ways to create React application.</p>
+<p>Using <i>npx</i> script.</p>
+<pre class="result notranslate">
+npx create-react-app &lt;react-app-name&gt;
+npx create-react-app hello-react-app
+</pre>
+<p>Using <i>npm</i> package manager.</p>
+<pre class="result notranslate">
+npm init react-app &lt;react-app-name&gt;
+npm init react-app hello-react-app
+</pre>
+<p>Using <i>yarn</i> package manager.</p>
+<pre class="result notranslate">
+yarn init react-app &lt;react-app-name&gt;
+yarn init react-app hello-react-app
+</pre>
+<h2>Selecting a template</h2>
+<p><i>Create React App</i> creates React application using default template. Template refers the initial code with certain build-in functionality. There are hundreds of template with many advanced features are available in npm package server. <i>Create React App</i> allows the users to select the template through <i>–template</i> command line switch.</p>
+<pre class="result notranslate">
+create-react-app my-app --template typescript
+</pre>
+<p>Above command will create react app using <i>cra-template-typescript</i> package from npm server.</p>
+<h2>Installing a dependency</h2>
+<p>React dependency package can be installed using normal <i>npm</i> or <i>yarn</i> package command as React uses the project structure recommended by <i>npm</i> and <i>yarn</i>.</p>
+<p>Using <i>npm</i> package manager.</p>
+<pre class="result notranslate">
+npm install --save react-router-dom
+</pre>
+<p>Using <i>yarn</i> package manager.</p>
+<pre class="result notranslate">
+yarn add react-router-dom
+</pre>
+<h2>Running the application</h2>
+<p>React application can be started using <i>npm</i> or <i>yarn</i> command depending on the package manager used in the project.</p>
+<p>Using <i>npm</i> package manager.</p>
+<pre class="result notranslate">
+npm start
+</pre>
+<p>Using <i>yarn</i> package manager.</p>
+<pre class="result notranslate">
+yarn start
+</pre>
+<p>To run the application in secure mode (HTTPS), set an environment variable, <i>HTTPS</i> and set it to true before starting the application. For example, in windows command prompt (cmd.exe), the below command set <i>HTTPS</i> and starts the application is HTTPS mode.</p>
+<pre class="result notranslate">
+set HTTPS=true && npm start
+</pre>
+<h2>Building</h2>
+<p>Once a React application development is done, application needs to be bundled and deployed to a production server. Let us learn the command available to build and deploy the application in this chapter.</p>
+<p>A single command is enough to create a production build of the application.</p>
+<pre class="result notranslate">
+npm run build
+&gt; expense-manager@0.1.0 build path\to\expense-manager
+&gt; react-scripts build
+
+Creating an optimized production build...
+Compiled with warnings.
+
+File sizes after gzip:
+
+   41.69 KB   build\static\js\2.a164da11.chunk.js
+    2.24 KB   build\static\js\main.de70a883.chunk.js
+    1.4  KB   build\static\js\3.d8a9fc85.chunk.js
+    1.17 KB   build\static\js\runtime-main.560bee6e.js
+  493     B   build\static\css\main.e75e7bbe.chunk.css
+
+The project was built assuming it is hosted at /.
+You can control this with the homepage field in your package.json.
+
+The build folder is ready to be deployed.
+You may serve it with a static server:
+
+   npm install -g serve
+   serve -s build
+
+Find out more about deployment here:
+
+   https://cra.link/deployment
+</pre>
+<p>Once the application is build, the application is available under <i>build/static</i> folder.</p>
+<p>By default, <i>profiling</i> option is disable and can be enabled through <i>–profile</i> command line option. <i>–profile</i> will include profiling information in the code. The profiling information can be used along with React DevTools to analyse the application.</p>
+<pre class="result notranslate">
+npm run build -- --profile
+</pre>
+<h2>Deployment</h2>
+<p>Once the application is build, it can be deployed to any web server. Let us learn how to deploy a React application in this chapter.</p>
+<h3>Local deployment</h3>
+<p>Local deployment can be done using serve package. Let us first install serve package using below command &minus;</p>
+<pre class="result notranslate">
+npm install -g server
+</pre>
+<p>To start the application using serve, use the below command &minus;</p>
+<pre class="result notranslate">
+cd /go/to/app/root/folder 
+serve -s build
+</pre>
+<p>By default, serve serve the application using port 5000. The application can be viewed @ <i>http://localhost:5000</i>.</p>
+<h3>Production deployment</h3>
+<p>Production deployment can be easily done by copying the files under build/static folder to the production application’s root directory. It will work in all web server including Apache, IIS, Nginx, etc.</p>
+<h3>Relative path</h3>
+<p>By default, the production build is created assuming that the application will be hosted in the root folder of a web application. If the application needs to be hosted in a subfolder, then use below configuration in the package.json and then build the application.</p>
+<pre class="result notranslate">
+{ ... "homepage": "http://domainname.com/path/to/subfolder", ... }
+</pre>
+<h1>ReactJS - Http Client Programming</h1>
+<hr/>
+
+<br>
+<div class="clear"></div>
+<p>Http client programming enables the application to connect and fetch data from http server through JavaScript. It reduces the data transfer between client and server as it fetches only the required data instead of the whole design and subsequently improves the network speed. It improves the user experience and becomes an indispensable feature of every modern web application.</p>
+<p>Nowadays, lot of server side application exposes its functionality through REST API (functionality over HTTP protocol) and allows any client application to consume the functionality.</p>
+<p>React does not provide it’s own http programming api but it supports browser’s built-in <i>fetch()</i> api as well as third party client library like axios to do client side programming. Let us learn how to do http programming in React application in this chapter. Developer should have a basic knowledge in Http programming to understand this chapter.</p>
+<h2>Expense Rest Api Server</h2>
+<p>The prerequisite to do Http programming is the basic knowledge of Http protocol and REST API technique. Http programming involves two part, server and client. React provides support to create client side application. Express a popular web framework provides support to create server side application.</p>
+<p>Let us first create a Expense Rest Api server using express framework and then access it from our <i>ExpenseManager</i> application using browser’s built-in fetch api.</p>
+<p>Open a command prompt and create a new folder, <i>express-rest-api</i>.</p>
+<pre class="result notranslate">
+cd /go/to/workspace 
+mkdir apiserver 
+cd apiserver
+</pre>
+<p>Initialize a new node application using the below command &minus;</p>
+<pre class="result notranslate">
+npm init
+</pre>
+<p>The <i>npm init</i> will prompt and ask us to enter basic project details. Let us enter <i>apiserver</i> for project name and <i>server.js</i> for entry point. Leave other configuration with default option.</p>
+<pre class="prettyprint notranslate">
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help json` for definitive documentation on these fields and exactly what they do.
+
+Use `npm install &lt;pkg&gt;` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (apiserver)
+version: (1.0.0)
+description: Rest api for Expense Application
+entry point: (index.js) server.js
+test command:
+git repository:
+keywords:
+author:
+license: (ISC)
+About to write to \path\to\workspace\expense-rest-api\package.json:
+{
+   "name": "expense-rest-api",
+   "version": "1.0.0",
+   "description": "Rest api for Expense Application",
+   "main": "server.js",
+   "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+   },
+   "author": "",
+   "license": "ISC"
+}
+Is this OK? (yes) yes
+</pre>
+<p>Next, install <i>express, nedb &amp; cors</i> modules using below command &minus;</p>
+<pre class="result notranslate">
+npm install express nedb cors
+</pre>
+<ul class="list">
+<li><p><i>express</i> is used to create server side application.</p></li>
+<li><p><i>nedb</i> is a datastore used to store the expense data.</p></li>
+<li><p><i>cors</i> is a middleware for <i>express</i> framework to configure the client access details.</p></li>
+</ul>
+<p>Next, let us create a file, data.csv and populate it with initial expense data for testing purposes. The structure of the file is that it contains one expense entry per line.</p>
+<pre class="result notranslate">
+Pizza,80,2020-10-10,Food
+Grape Juice,30,2020-10-12,Food
+Cinema,210,2020-10-16,Entertainment
+Java Programming book,242,2020-10-15,Academic
+Mango Juice,35,2020-10-16,Food
+Dress,2000,2020-10-25,Cloth
+Tour,2555,2020-10-29,Entertainment
+Meals,300,2020-10-30,Food
+Mobile,3500,2020-11-02,Gadgets
+Exam Fees,1245,2020-11-04,Academic
+</pre>
+<p>Next, create a file <i>expensedb.js</i> and include code to load the initial expense data into the data store. The code checks the data store for initial data and load only if the data is not available in the store.</p>
+<pre class="prettyprint notranslate">
+var store = require("nedb")
+var fs = require('fs');
+var expenses = new store({ filename: "expense.db", autoload: true })
+expenses.find({}, function (err, docs) {
+   if (docs.length == 0) {
+      loadExpenses();
+   }
+})
+function loadExpenses() {
+   readCsv("data.csv", function (data) {
+      console.log(data);
+
+      data.forEach(function (rec, idx) {
+         item = {}
+         item.name = rec[0];
+         item.amount = parseFloat(rec[1]);
+         item.spend_date = new Date(rec[2]);
+         item.category = rec[3];
+
+         expenses.insert(item, function (err, doc) {
+            console.log('Inserted', doc.item_name, 'with ID', doc._id);
+         })
+      })
+   })
+}
+function readCsv(file, callback) {
+   fs.readFile(file, 'utf-8', function (err, data) {
+      if (err) throw err;
+      var lines = data.split('\r\n');
+      var result = lines.map(function (line) {
+         return line.split(',');
+      });
+      callback(result);
+   });
+}
+module.exports = expenses
+</pre>
+<p>Next, create a file, <i>server.js</i> and include the actual code to list, add, update and delete the expense entries.</p>
+<pre class="prettyprint notranslate">
+var express = require("express")
+var cors = require('cors')
+var expenseStore = require("./expensedb.js")
+var app = express()
+app.use(cors());
+var bodyParser = require("body-parser");
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+var HTTP_PORT = 8000
+app.listen(HTTP_PORT, () =&gt; {
+   console.log("Server running on port %PORT%".replace("%PORT%", HTTP_PORT))
+});
+app.get("/", (req, res, next) =&gt; {
+   res.json({ "message": "Ok" })
+});
+app.get("/api/expenses", (req, res, next) =&gt; {
+   expenseStore.find({}, function (err, docs) {
+      res.json(docs);
+   });
+});
+app.get("/api/expense/:id", (req, res, next) =&gt; {
+   var id = req.params.id;
+   expenseStore.find({ _id: id }, function (err, docs) {
+      res.json(docs);
+   })
+});
+app.post("/api/expense/", (req, res, next) =&gt; {
+   var errors = []
+   if (!req.body.item) {
+      errors.push("No item specified");
+   }
+   var data = {
+      name: req.body.name,
+      amount: req.body.amount,
+      category: req.body.category,
+      spend_date: req.body.spend_date,
+   }
+   expenseStore.insert(data, function (err, docs) {
+      return res.json(docs);
+   });
+})
+app.put("/api/expense/:id", (req, res, next) =&gt; {
+   var id = req.params.id;
+   var errors = []
+   if (!req.body.item) {
+      errors.push("No item specified");
+   }
+   var data = {
+      _id: id,
+      name: req.body.name,
+      amount: req.body.amount,
+      category: req.body.category,
+      spend_date: req.body.spend_date,
+   }
+   expenseStore.update( { _id: id }, data, function (err, docs) {
+      return res.json(data);
+   });
+})
+app.delete("/api/expense/:id", (req, res, next) =&gt; {
+   var id = req.params.id;
+   expenseStore.remove({ _id: id }, function (err, numDeleted) {
+      res.json({ "message": "deleted" })
+   });
+})
+app.use(function (req, res) {
+   res.status(404);
+});
+</pre>
+<p>Now, it is time to run the application.</p>
+<pre class="result notranslate">
+npm run start
+</pre>
+<p>Next, open a browser and enter <i>http://localhost:8000/</i> in the address bar.</p>
+<pre class="result notranslate">
+{ 
+   "message": "Ok" 
+}
+</pre>
+<p>It confirms that our application is working fine.</p>
+<p>Finally, change the url to <i>http://localhost:8000/api/expense</i> and press enter. The browser will show the initial expense entries in JSON format.</p>
+<pre class="prettyprint notranslate">
+[
+   ...
+   {
+      "name": "Pizza",
+      "amount": 80,
+      "spend_date": "2020-10-10T00:00:00.000Z",
+      "category": "Food",
+      "_id": "5H8rK8lLGJPVZ3gD"
+   },
+   ...
+]
+</pre>
+<p>Let us use our newly created expense server in our Expense manager application through <i>fetch()</i> api in the upcoming section.</p>
+<h2>The fetch() api</h2>
+<p>Let us create a new application to showcase client side programming in React.</p>
+<p>First, create a new react application, <i>react-http-app</i> using <i>Create React App</i> or <i>Rollup</i> bundler by following instruction in <i>Creating a React application</i> chapter.</p>
+<p>Next, open the application in your favorite editor.</p>
+<p>Next, create <i>src</i> folder under the root directory of the application.</p>
+<p>Next, create <i>components</i> folder under src folder.</p>
+<p>Next, create a file, <i>ExpenseEntryItemList.css</i> under <i>src/components</i> folder and include generic table styles.</p>
+<pre class="prettyprint notranslate">
+html {
+   font-family: sans-serif;
+}
+table {
+   border-collapse: collapse;
+   border: 2px solid rgb(200,200,200);
+   letter-spacing: 1px;
+   font-size: 0.8rem;
+}
+td, th {
+   border: 1px solid rgb(190,190,190);
+   padding: 10px 20px;
+}
+th {
+   background-color: rgb(235,235,235);
+}
+td, th {
+   text-align: left;
+}
+tr:nth-child(even) td {
+   background-color: rgb(250,250,250);
+}
+tr:nth-child(odd) td {
+   background-color: rgb(245,245,245);
+}
+caption {
+   padding: 10px;
+}
+tr.highlight td { 
+    background-color: #a6a8bd;
+}
+</pre>
+<p>Next, create a file, <i>ExpenseEntryItemList.js</i> under <i>src/components</i> folder and start editing.</p>
+<p>Next, import <i>React</i> library.</p>
+<pre class="result notranslate">
+import React from 'react';
+</pre>
+<p>Next, create a class, ExpenseEntryItemList and call constructor with props.</p>
+<pre class="prettyprint notranslate">
+class ExpenseEntryItemList extends React.Component {
+   constructor(props) {
+      super(props);
+   }
+}
+</pre>
+<p>Next, initialize the state with empty list in the constructor.</p>
+<pre class="prettyprint notranslate">
+this.state = {
+   isLoaded: false,
+   items: []
+}
+</pre>
+<p>Next, create a method, <i>setItems</i> to format the items received from remote server and then set it into the state of the component.</p>
+<pre class="prettyprint notranslate">
+setItems(remoteItems) {
+   var items = [];
+   remoteItems.forEach((item) =&gt; {
+      let newItem = {
+         id: item._id,
+         name: item.name,
+         amount: item.amount,
+         spendDate: item.spend_date,
+         category: item.category
+      }
+      items.push(newItem)
+   });
+   this.setState({
+      isLoaded: true,
+      items: items
+   });
+}
+</pre>
+<p>Next, add a method, <i>fetchRemoteItems</i> to fetch the items from the server.</p>
+<pre class="prettyprint notranslate">
+fetchRemoteItems() {
+   fetch("http://localhost:8000/api/expenses")
+      .then(res =&gt; res.json())
+      .then(
+         (result) =&gt; {
+            this.setItems(result);
+         },
+         (error) =&gt; {
+            this.setState({
+               isLoaded: false,
+               error
+            });
+         }
+      )
+}
+</pre>
+<p>Here,</p>
+<ul class="list">
+<li><p><i>fetch</i> api is used to fetch the item from the remote server.</p></li>
+<li><p><i>setItems</i> is used to format and store the items in the state.</p></li>
+</ul>
+<p>Next, add a method, <i>deleteRemoteItem</i> to delete the item from the remote server.</p>
+<pre class="prettyprint notranslate">
+deleteRemoteItem(id) {
+   fetch('http://localhost:8000/api/expense/' + id, { method: 'DELETE' })
+      .then(res =&gt; res.json())
+      .then(
+         () =&gt; {
+            this.fetchRemoteItems()
+         }
+      )
+}
+</pre>
+<p>Here,</p>
+<ul class="list">
+<li><p><i>fetch</i> api is used to delete and fetch the item from the remote server.</p></li>
+<li><p><i>setItems</i> is again used to format and store the items in the state.</p></li>
+</ul>
+<p>Next, call the <i>componentDidMount</i> life cycle api to load the items into the component during its mounting phase.</p>
+<pre class="prettyprint notranslate">
+componentDidMount() { 
+   this.fetchRemoteItems(); 
+}
+</pre>
+<p>Next, write an event handler to remove the item from the list.</p>
+<pre class="prettyprint notranslate">
+handleDelete = (id, e) =&gt; { 
+   e.preventDefault(); 
+   console.log(id); 
+
+   this.deleteRemoteItem(id); 
+}
+</pre>
+<p>Next, write the render method.</p>
+<pre class="prettyprint notranslate">
+render() {
+   let lists = [];
+   if (this.state.isLoaded) {
+      lists = this.state.items.map((item) =&gt;
+         &lt;tr key={item.id} onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave}&gt;
+            &lt;td&gt;{item.name}&lt;/td&gt;
+            &lt;td&gt;{item.amount}&lt;/td&gt;
+            &lt;td&gt;{new Date(item.spendDate).toDateString()}&lt;/td&gt;
+            &lt;td&gt;{item.category}&lt;/td&gt;
+            &lt;td&gt;&lt;a href="#" onClick={(e) =&gt; this.handleDelete(item.id, e)}&gt;Remove&lt;/a&gt;&lt;/td&gt;
+         &lt;/tr&gt;
+      );
+   }
+   return (
+      &lt;div&gt;
+         &lt;table onMouseOver={this.handleMouseOver}&gt;
+            &lt;thead&gt;
+               &lt;tr&gt;
+                  &lt;th&gt;Item&lt;/th&gt;
+                  &lt;th&gt;Amount&lt;/th&gt;
+                  &lt;th&gt;Date&lt;/th&gt;
+                  &lt;th&gt;Category&lt;/th&gt;
+                  &lt;th&gt;Remove&lt;/th&gt;
+               &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+               {lists}
+            &lt;/tbody&gt;
+         &lt;/table&gt;
+      &lt;/div&gt;
+   );
+}
+</pre>
+<p>Finally, export the component.</p>
+<pre class="result notranslate">
+export default ExpenseEntryItemList;
+</pre>
+<p>Next, create a file, <i>index.js</i> under the <i>src</i> folder and use <i>ExpenseEntryItemList</i> component.</p>
+<pre class="prettyprint notranslate">
+import React from 'react';
+import ReactDOM from 'react-dom';
+import ExpenseEntryItemList from './components/ExpenseEntryItemList';
+
+ReactDOM.render(
+   &lt;React.StrictMode&gt;
+         &lt;ExpenseEntryItemList /&gt;
+   &lt;/React.StrictMode&gt;,
+   document.getElementById('root')
+);
+</pre>
+<p>Finally, create a <i>public</i> folder under the root folder and create <i>index.html</i> file.</p>
+<pre class="prettyprint notranslate">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+   &lt;head&gt;
+      &lt;meta charset="utf-8"&gt;
+      &lt;title&gt;React App&lt;/title&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;div id="root"&gt;&lt;/div&gt;
+      &lt;script type="text/JavaScript" src="./index.js"&gt;&lt;/script&gt;
+   &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+<p>Next, open a new terminal window and start our server application.</p>
+<pre class="result notranslate">
+cd /go/to/server/application 
+npm start
+</pre>
+<p>Next, serve the client application using npm command.</p>
+<pre class="result notranslate">
+npm start
+</pre>
+<p>Let us create a sample expense manager application by applying the concepts that we have learned in this tutorial. Some of the concepts are listed below &minus;</p>
+<ul class="list">
+<li><p>React basics (component, jsx, props and state)</p></li>
+<li><p>Router using <b>react-router</b></p></li>
+<li><p>Http client programming (Web API)</p></li>
+<li><p>Form programming using Formik</p></li>
+<li><p>Advanced state management using Redux</p></li>
+<li><p>Async / await programming</p></li>
+</ul>
+<h2>Features</h2>
+<p>Some of the features of our sample expense manager application are &minus;</p>
+<ul class="list">
+<li><p>Listing all the expenses from the server</p></li>
+<li><p>Add an expense item</p></li>
+<li><p>Delete an expense item</p></li>
+</ul>
+
+    <br>
+
+    <footer>
+        <div class="container bg-secondary">
+        <div class="row">
+          <div class="col fw-bolder">
+            <br>
+           Contact us --
+           <br>
+            Email : 
+            <br>
+            admin@primathink.com
+        </div>
+        <div class="col fw-bold">
+          <br><br>
+          Phone : 
+          <br>
+          +91 23456789<br>
+          +91 29876421
+        </div>
+        <div class="col fw-bolder">
+          <br><br>
+          Address : 
+          <br>
+          Primathink WebD Head Office,<br>
+          Nagpur-440033,<br>
+          Maharashtra
+        </div>
+        <br>
+      </div>
+      <br>
+    </div>
+    </footer>
+    <br>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

@@ -1,0 +1,1072 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>PrimaThink Web Devlopment Training Co.</title>
+  </head>
+  <body>
+     <marquee><h2>PrimaThink Web Devlopment Training Co.</h2></marquee>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+     <a class="navbar-brand" href="#">
+      <img src="img/img1_navbar.jpg" alt="" width="30" height="30">
+        PrimaThink
+    </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="course.html">Course</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="faculty.html">Faculty</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="/langu" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Languages 
+           </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="html.html">HTML</a></li>
+              <li><a class="dropdown-item" href="css.html">CSS</a></li>
+              <li><a class="dropdown-item" href="javascript.html">JavaScript</a></li>
+              <li><a class="dropdown-item" href="php.html">PHP</a></li>
+              <li><a class="dropdown-item" href="bootstrap.html">Bootstrap</a></li>
+              <li><a class="dropdown-item" href="react.html">React</a></li>
+              </ul>
+            </li>
+             </li>
+          <li class="nav-item">
+            <a class="nav-link" href="books.html">Books</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Contact Us</a>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <br>
+    <h1>Bootstrap</h1>
+    <img src="img/img5_card.jpg" alt="" width="300" height="300"> <br>
+    <br>
+      <p>Twitter Bootstrap is the most popular front end framework in the recent time. It is sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development. It uses HTML, CSS and Javascript. This tutorial will teach you the basics of Bootstrap Framework using which you can create web projects with ease. The tutorial is divided into sections such as Bootstrap Basic Structure, Bootstrap CSS, Bootstrap Layout Components and Bootstrap Plugins. Each of these sections contain related topics with simple and useful examples.</p>
+<h2>Why to Learn Bootstrap?</h2>
+<ul class="list">
+<li><p><b>Mobile first approach</b> &minus; Bootstrap 3, framework consists of Mobile first styles throughout the entire library instead them of in separate files.</p></li>
+<li><p><b>Browser Support</b> &minus; It is supported by all popular browsers.</p></li>
+</ul>
+<ul class="list">
+<li><p><b>Easy to get started</b> &minus; With just the knowledge of HTML and CSS anyone can get started with Bootstrap. Also the Bootstrap official site has a good documentation.</p></li>
+<li><p><b>Responsive design</b> &minus; Bootstrap's responsive CSS adjusts to Desktops, Tablets and Mobiles. More about the responsive design is in the chapter Bootstrap Responsive Design.</p></li>
+</ul>
+<ul class="list">
+<li><p>Provides a clean and uniform solution for building an interface for developers.</p></li>
+<li><p>It contains beautiful and functional built-in components which are easy to customize.</p></li>
+<li><p>It also provides web based customization.</p></li>
+<li><p>And best of all it is an open source.</p></li>
+</ul>
+<h2>Hello World using Bootstrap.</h2>
+<p>Just to give you a little excitement about Bootstrap, I'm going to give you a small conventional Bootstrap Hello World program, You can try it using Demo link.</p>
+<div class="demo-view">
+<a href="http://tpcg.io/aMKLYm" target="_blank" rel="nofollow" class="demo"><i class="fa-external-link"></i> Live Demo</a>
+</div>
+<pre class="prettyprint notranslate">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   
+   &lt;head&gt;
+      &lt;title&gt;Bootstrap 101 Template&lt;/title&gt;
+      &lt;meta name = "viewport" content = "width = device-width, initial-scale = 1.0"&gt;
+      
+      &lt;!-- Bootstrap --&gt;
+      &lt;link href = "css/bootstrap.min.css" rel = "stylesheet"&gt;
+      
+      &lt;!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries --&gt;
+      &lt;!-- WARNING: Respond.js doesn't work if you view the page via file:// --&gt;
+      
+      &lt;!--[if lt IE 9]&gt;
+      &lt;script src = "https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"&gt;&lt;/script&gt;
+      &lt;script src = "https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"&gt;&lt;/script&gt;
+      &lt;![endif]--&gt;
+      
+   &lt;/head&gt;
+   
+   &lt;body&gt;
+      &lt;h1&gt;Hello, world!&lt;/h1&gt;
+
+      &lt;!-- jQuery (necessary for Bootstrap's JavaScript plugins) --&gt;
+      &lt;script src = "https://code.jquery.com/jquery.js"&gt;&lt;/script&gt;
+      
+      &lt;!-- Include all compiled plugins (below), or include individual files as needed --&gt;
+      &lt;script src = "js/bootstrap.min.js"&gt;&lt;/script&gt;
+      
+   &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+<h2>Applications of Bootstrap</h2>
+<ul class="list">
+<li><p><b>Scaffolding</b> &minus; Bootstrap provides a basic structure with Grid System, link styles, and background. This is is covered in detail in the section <b>Bootstrap Basic Structure</b></p></li>
+<li><p><b>CSS</b> &minus; Bootstrap comes with the feature of global CSS settings, fundamental HTML elements styled and enhanced with extensible classes, and an advanced grid system. This is covered in detail in the section <b>Bootstrap with CSS</b>.</p></li>
+<li><p><b>Components</b> &minus; Bootstrap contains over a dozen reusable components built to provide iconography, dropdowns, navigation, alerts, pop-overs, and much more. This is covered in detail in the section <b>Layout Components</b>.</p></li>
+<li><p><b>JavaScript Plugins</b> &minus; Bootstrap contains over a dozen custom jQuery plugins. You can easily include them all, or one by one. This is covered in details in the section <b>Bootstrap Plugins</b>.</p></li>
+<li><p><b>Customize</b> &minus; You can customize Bootstrap's components, LESS variables, and jQuery plugins to get your very own version.</p></li>
+</ul>
+<h2>Audience</h2>
+<p>This tutorial has been prepared for anyone who has a basic knowledge of HTML and CSS and has an urge to develop websites. After completing this tutorial you will find yourself at a moderate level of expertise in developing web projects using Twitter Bootstrap.</p>
+<h2>Prerequisites</h2>
+<p>Before you start proceeding with this tutorial, we are assuming that you are already aware about the basics of HTML and CSS. If you are not well aware of these concepts then we will suggest you to go through our short tutorial on HTML Tutorial and CSS Tutorial.</p>
+
+<h2>What is a Grid?</h2>
+<p>As put by wikepedia &minus;</p>
+<blockquote>In graphic design, a grid is a structure (usually two-dimensional) made up of a series of intersecting straight (vertical, horizontal) lines used to structure the content. It is widely used to design layout and content structure in print design. In web design, it is a very effective method to create a consistent layout rapidly and effectively using HTML and CSS.</blockquote>
+<p>To put in simple words, grids in web design organise and structure content, makes the websites easy to scan and reduces the cognitive load on users.</p>
+<h2>What is Bootstrap Grid System?</h2>
+<p>As put by the official documentation of Bootstrap for grid system &minus;</p>
+<blockquote>Bootstrap includes a responsive, mobile first fluid grid system that appropriately scales up to 12 columns as the device or viewport size increases. It includes predefined classes for easy layout options, as well as powerful mixins for generating more semantic layouts.</blockquote>
+<p>Let us understand the above statement. Bootstrap 3 is mobile first in the sense that the code for Bootstrap now starts by targeting smaller screens like mobile devices, tablets, and then “expands” components and grids for larger screens such as laptops, desktops.</p>
+<h3>Mobile First Strategy</h3>
+<ul class="list">
+<li><p><b>Content</b></p>
+<ul class="list">
+<li>Determine what is most important.</li>
+</ul>
+</li>
+<li><p><b>Layout</b></p>
+<ul class="list">
+<li>Design to smaller widths first.</li>
+<li>Base CSS address mobile device first; media queries address for tablet, desktops.</li>
+</ul>
+</li>
+<li><p><b>Progressive Enhancement</b></p>
+<ul class="list">
+<li>Add elements as screen size increases.</li>
+</ul>
+</li>
+</ul>
+<h2>Working of Bootstrap Grid System</h2>
+<p>Grid systems are used for creating page layouts through a series of rows and columns that house your content. Here's how the Bootstrap grid system works &minus;</p>
+<ul class="list">
+<li><p>Rows must be placed within a <b>.container</b> class for proper alignment and padding.</p></li>
+<li><p>Use rows to create horizontal groups of columns.</p></li>
+<li><p>Content should be placed within the columns, and only columns may be the immediate children of rows.</p></li>
+<li><p>Predefined grid classes like <b>.row and</b> <b>.col-xs-4</b> are available for quickly making grid layouts. LESS mixins can also be used for more semantic layouts.</p></li>
+<li><p>Columns create gutters (gaps between column content) via padding. That padding is offset in rows for the first and the last column via negative margin on <b>.rows</b>.</p></li>
+<li><p>Grid columns are created by specifying the number of twelve available columns you wish to span. For example, three equal columns would use three <b>.col-xs-4</b>.</p></li>
+</ul>
+<h2>Media Queries</h2>
+<p>Media query is a really fancy term for "conditional CSS rule". It simply applies some CSS, based on certain conditions set forth. If those conditions are met, the style is applied.</p>
+<p>Media Queries in Bootstrap allow you to move, show and hide content based on the viewport size. Following media queries are used in LESS files to create the key breakpoints in the Bootstrap grid system.</p>
+<pre class="result notranslate">
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) { ... }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) { ... }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) { ... }
+</pre>
+<p>Occasionally these are expanded to include a <b>max-width</b> to limit CSS to a narrower set of devices.</p>
+<pre class="result notranslate">
+@media (max-width: @screen-xs-max) { ... }
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { ... }
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max) { ... }
+@media (min-width: @screen-lg-min) { ... }
+</pre>
+<p>Media queries have two parts, a device specification and then a size rule. In the above case, the following rule is set &minus;</p>
+<p>Let us consider this line &minus;</p>
+<pre class="result notranslate">
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { ... }
+</pre>
+<p>For all devices no matter what kind with <i>min-width: @screen-sm-min</i> if the width of the screen gets smaller than <i>@screen-sm-max</i>, <i>then do something</i>.</p>
+<h2>Grid options</h2>
+<p>The following table summarizes aspects of how Bootstrap grid system works across multiple devices &minus;</p>
+<table class="table table-bordered">
+<tr>
+<th style="text-align:center;"></th>
+<th style="text-align:center;">Extra small devices Phones (&lt;768px)</th>
+<th style="text-align:center;">Small devices Tablets (≥768px)</th>
+<th style="text-align:center;">Medium devices Desktops (≥992px)</th>
+<th style="text-align:center;">Large devices Desktops (≥1200px)</th>
+</tr>
+<tr>
+<td style="vertical-align:middle;">Grid behavior</td>
+<td style="vertical-align:middle;">Horizontal at all times</td>
+<td>Collapsed to start, horizontal above breakpoints</td>
+<td>Collapsed to start, horizontal above breakpoints</td>
+<td>Collapsed to start, horizontal above breakpoints</td>
+</tr>
+<tr>
+<td>Max container width</td>
+<td class="ts">None (auto)</td>
+<td class="ts">750px</td>
+<td class="ts">970px</td>
+<td class="ts">1170px</td>
+</tr>
+<tr>
+<td>Class prefix</td>
+<td class="ts"><b>.col-xs-</b></td>
+<td class="ts"><b>.col-sm-</b></td>
+<td class="ts"><b>.col-md-</b></td>
+<td class="ts"><b>.col-lg-</b></td>
+</tr>
+<tr>
+<td># of columns</td>
+<td class="ts">12</td>
+<td class="ts">12</td>
+<td class="ts">12</td>
+<td class="ts">12</td>
+</tr>
+<tr>
+<td>Max column width</td>
+<td class="ts">Auto</td>
+<td class="ts">60px</td>
+<td class="ts">78px</td>
+<td class="ts">95px</td>
+</tr>
+<tr>
+<td style="vertical-align:middle;">Gutter width</td>
+<td>
+<p style="text-align:center;">30px</p>
+<p>(15px on each side of a column)</p>
+</td>
+<td>
+<p style="text-align:center;">30px</p>
+<p>(15px on each side of a column)</p>
+</td>
+<td>
+<p style="text-align:center;">30px</p>
+<p>(15px on each side of a column)</p>
+</td>
+<td>
+<p style="text-align:center;">30px</p>
+<p>(15px on each side of a column)</p>
+</td>
+</tr>
+<tr>
+<td>Nestable</td>
+<td style="text-align:center;">Yes</td>
+<td style="text-align:center;">Yes</td>
+<td style="text-align:center;">Yes</td>
+<td style="text-align:center;">Yes</td>
+</tr>
+<tr>
+<td>Offsets</td>
+<td style="text-align:center;">Yes</td>
+<td style="text-align:center;">Yes</td>
+<td style="text-align:center;">Yes</td>
+<td style="text-align:center;">Yes</td>
+</tr>
+<tr>
+<td>Column ordering</td>
+<td class="ts">Yes</td>
+<td class="ts">Yes</td>
+<td class="ts">Yes</td>
+<td class="ts">Yes</td>
+</tr>
+</table>
+<h3>Basic Grid Structure</h3>
+<p>Following is basic structure of Bootstrap grid &minus;</p>
+<pre class="prettyprint notranslate">
+&lt;div class = "container"&gt;
+
+   &lt;div class = "row"&gt;
+      &lt;div class = "col-*-*"&gt;&lt;/div&gt;
+      &lt;div class = "col-*-*"&gt;&lt;/div&gt;
+   &lt;/div&gt;
+   
+   &lt;div class = "row"&gt;...&lt;/div&gt;
+  
+&lt;/div&gt;
+
+&lt;div class = "container"&gt;
+   ....
+&lt;/div&gt;
+</pre>
+
+<h2>Responsive column resets</h2>
+<p>With the four tiers of grids available, you are bound to run into issues where at certain breakpoints, the columns don't clear quite right as one is taller than the other. To fix that, use a combination of a class <b>.clearfix</b> and the responsive utility classes</a> as shown in the following example &minus;
+<div class="demo-view">
+<a href="http://tpcg.io/LCNQtB" target="_blank" rel="nofollow" class="demo"><i class="fa-external-link"></i> Live Demo</a>
+</div>
+<pre class="prettyprint notranslate">
+&lt;div class = "container"&gt;
+   &lt;div class = "row" &gt;
+   
+      &lt;div class = "col-xs-6 col-sm-3" style = "background-color: #dedef8;
+         box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;"&gt;
+         
+         &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
+      &lt;/div&gt;
+      
+      &lt;div class = "col-xs-6 col-sm-3" style = "background-color: #dedef8;
+         box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;"&gt;
+         
+         &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+            nisi ut aliquip ex ea commodo consequat.&lt;/p&gt;
+         
+         &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
+            eiusmod tempor incididunt ut.&lt;/p&gt;
+      &lt;/div&gt;
+
+      &lt;div class = "clearfix visible-xs"&gt;&lt;/div&gt;
+      
+      &lt;div class = "col-xs-6 col-sm-3" style = "background-color: #dedef8;
+         box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;"&gt;
+         
+         &lt;p&gt;Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+            laboris nisi ut aliquip ex ea commodo consequat.&lt;/p&gt;
+      &lt;/div&gt;
+      
+      &lt;div class = "col-xs-6 col-sm-3" style = "background-color: #dedef8;
+         box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;"&gt;
+         
+         &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+            enim ad minim&lt;/p&gt;
+      &lt;/div&gt;
+      
+   &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+<p>This will produce the following result &minus;</p>
+<blockquote>Resize your viewport or check it out on your phone for a desired result of this example.</blockquote>
+<h2>Offset Columns</h2>
+<p>Offsets are a useful feature for more specialized layouts. They can be used to push columns over for more spacing, (for example). The <b>.col-xs = *</b> classes don’t support offsets, but they are easily replicated by using an empty cell.</p>
+<p>To use offsets on large displays, use the <b>.col-md-offset-*</b> classes. These classes increase the left margin of a column by <b>*</b> columns where <b>*</b> range from <b>1</b> to <b>11</b>.</p>
+<p>In the following example, we have  &lt;div class = "col-md-6"&gt;..&lt;/div&gt;, We will center this using class <b>.col-md-offset-3</b>.</p>
+<div class="demo-view">
+<a href="http://tpcg.io/WnWyYt" target="_blank" rel="nofollow" class="demo"><i class="fa-external-link"></i> Live Demo</a>
+</div>
+<pre class="prettyprint notranslate">
+&lt;div class = "container"&gt;
+
+   &lt;h1&gt;Hello, world!&lt;/h1&gt;
+
+   &lt;div class = "row" &gt;
+      &lt;div class = "col-xs-6 col-md-offset-3" style = "background-color: #dedef8; 
+         box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;"&gt;
+         
+         &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
+      &lt;/div&gt;
+
+   &lt;/div&gt;
+  
+&lt;/div&gt;
+</pre>
+<p>This will produce the following result &minus;</p>
+<h2>Nesting columns</h2>
+<p>To nest your content with the default grid, add a new <b>.row</b> and set of <b>.col-md-*</b> columns within an existing <b>.col-md-*</b> column. Nested rows should include a set of columns that add up to 12.</p>
+<p>In the following example, the layout has two columns, with the second one being split into four boxes over two rows.</p>
+<div class="demo-view">
+<a href="http://tpcg.io/Jw1HTZ" target="_blank" rel="nofollow" class="demo"><i class="fa-external-link"></i> Live Demo</a>
+</div>
+<pre class="prettyprint notranslate">
+&lt;div class = "container"&gt;
+   &lt;h1&gt;Hello, world!&lt;/h1&gt;
+
+   &lt;div class = "row"&gt;
+
+      &lt;div class = "col-md-3" style = "background-color: #dedef8; 
+         box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;"&gt;
+         
+         &lt;h4&gt;First Column&lt;/h4&gt;
+         &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
+      &lt;/div&gt;
+
+      &lt;div class = "col-md-9" style = "background-color: #dedef8;
+         box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;"&gt;
+         
+         &lt;h4&gt;Second Column- Split into 4 boxes&lt;/h4&gt;
+         &lt;div class = "row"&gt;
+            
+            &lt;div class = "col-md-6" style = "background-color: #B18904;
+               box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;"&gt;
+               
+               &lt;p&gt;Consectetur art party Tonx culpa semiotics. 
+                  Pinterest assumenda minim organic quis.&lt;/p&gt;
+            &lt;/div&gt;
+            
+            &lt;div class = "col-md-6" style = "background-color: #B18904;
+               box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;"&gt;
+               
+               &lt;p&gt;sed do eiusmod tempor incididunt ut labore et dolore magna 
+                  aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                  ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p&gt;
+            &lt;/div&gt;
+        
+         &lt;/div&gt;
+
+         &lt;div class = "row"&gt;
+      
+            &lt;div class = "col-md-6" style = "background-color: #B18904;
+               box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;"&gt;
+               
+               &lt;p&gt;quis nostrud exercitation ullamco laboris nisi ut aliquip 
+                  ex ea commodo consequat.&lt;/p&gt;
+            &lt;/div&gt;   
+            
+            &lt;div class = "col-md-6" style = "background-color: #B18904;
+               box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;"&gt;
+               
+               &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                  sed do eiusmod tempor incididunt ut labore et dolore magna 
+                  aliqua. Ut enim ad minim.&lt;/p&gt;
+            &lt;/div&gt;
+        
+         &lt;/div&gt;
+
+      &lt;/div&gt;
+
+   &lt;/div&gt;
+  
+&lt;/div&gt;
+</pre>
+<p>This will produce the following result &minus;</p>
+
+<h2>Column Ordering</h2>
+<p>Another nice feature of Bootstrap grid system is that you can easily write the columns in an order, and show them in another one. You can easily change the order of built-in grid columns with <b>.col-md-push-*</b> and <b>.col-md-pull-*</b> modifier classes where <b>*</b> range from <b>1</b> to <b>11</b>.</p>
+<p>In the following example we have two columns layout with left column being the narrowest and acting as a sidebar. We will swap the order of these columns using <b>.col-md-push-*</b> and <b>.col-md-pull-*</b> classes.</p>
+<div class="demo-view">
+<a href="http://tpcg.io/1aLStX" target="_blank" rel="nofollow" class="demo"><i class="fa-external-link"></i> Live Demo</a>
+</div>
+<pre class="prettyprint notranslate">
+&lt;div class = "container"&gt;
+   &lt;h1&gt;Hello, world!&lt;/h1&gt;
+   
+   &lt;div class = "row"&gt;
+      &lt;p&gt;Before Ordering&lt;/p&gt;
+      
+      &lt;div class = "col-md-4" style = "background-color: #dedef8;
+         box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;"&gt;
+         
+         I am on left
+      &lt;/div&gt;
+      
+      &lt;div class = "col-md-8" style = "background-color: #dedef8;
+         box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;"&gt;
+         
+         I am on right
+      &lt;/div&gt;
+      
+   &lt;/div&gt;
+  
+   &lt;br&gt;
+   
+   &lt;div class = "row"&gt;
+      &lt;p&gt;After Ordering&lt;/p&gt;
+      
+      &lt;div class = "col-md-4 col-md-push-8" style = "background-color: #dedef8;
+         box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;"&gt;
+         
+         I was on left
+      &lt;/div&gt;
+      
+      &lt;div class = "col-md-8 col-md-pull-4" style = "background-color: #dedef8;
+         box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;"&gt;
+         
+         I was on right
+      &lt;/div&gt;
+    
+   &lt;/div&gt;
+
+&lt;/div&gt;
+</pre>
+
+<p>The navbar is one of the prominent features of Bootstrap sites. Navbars are responsive 'meta' components that serve as navigation headers for your application or site. Navbars collapse in mobile views and become horizontal as the available viewport width increases. At its core, the navbar includes styling for site names and basic navigation.</p>
+<h2>Default Navbar</h2>
+<p>To create a default navbar &minus;</p>
+<ul class="list">
+<li><p>Add the classes <b>.navbar, .navbar-default</b> to the &lt;nav&gt; tag.</p></li>
+<li><p>Add <b>role = "navigation"</b> to the above element, to help with accessibility.</p></li>
+<li><p>Add a header class <b>.navbar-header</b> to the &lt;div&gt; element. Include an &lt;a&gt; element with class <b>navbar-brand</b>. This will give the text a slightly larger size.</p></li>
+<li><p>To add links to the navbar, simply add an unordered list with the classes of <b>.nav, .navbar-nav</b>.</p></li>
+</ul> 
+<p>The following example demonstrates this &minus;</p>
+<div class="demo-view">
+<a href="http://tpcg.io/QRCyaw" target="_blank" rel="nofollow" class="demo"><i class="fa-external-link"></i> Live Demo</a>
+</div>
+<pre class="prettyprint notranslate">
+&lt;nav class = "navbar navbar-default" role = "navigation"&gt;
+
+   &lt;div class = "navbar-header"&gt;
+      &lt;a class = "navbar-brand" href = "#"&gt;TutorialsPoint&lt;/a&gt;
+   &lt;/div&gt;
+   
+   &lt;div&gt;
+      &lt;ul class = "nav navbar-nav"&gt;
+         &lt;li class = "active"&gt;&lt;a href = "#"&gt;iOS&lt;/a&gt;&lt;/li&gt;
+         &lt;li&gt;&lt;a href = "#"&gt;SVN&lt;/a&gt;&lt;/li&gt;
+      
+         &lt;li class = "dropdown"&gt;
+            &lt;a href = "#" class = "dropdown-toggle" data-toggle = "dropdown"&gt;
+               Java 
+               &lt;b class = "caret"&gt;&lt;/b&gt;
+            &lt;/a&gt;
+            
+            &lt;ul class = "dropdown-menu"&gt;
+               &lt;li&gt;&lt;a href = "#"&gt;jmeter&lt;/a&gt;&lt;/li&gt;
+               &lt;li&gt;&lt;a href = "#"&gt;EJB&lt;/a&gt;&lt;/li&gt;
+               &lt;li&gt;&lt;a href = "#"&gt;Jasper Report&lt;/a&gt;&lt;/li&gt;
+               
+               &lt;li class = "divider"&gt;&lt;/li&gt;
+               &lt;li&gt;&lt;a href = "#"&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+               
+               &lt;li class = "divider"&gt;&lt;/li&gt;
+               &lt;li&gt;&lt;a href = "#"&gt;One more separated link&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+         &lt;/li&gt;
+      &lt;/ul&gt;
+   &lt;/div&gt;
+&lt;/nav&gt;
+</pre>
+<!-- <img src="/bootstrap/images/defaultnavbar_demo.jpg" alt="Default Navbar Demo" /> -->
+<h2>Responsive Navbar</h2>
+<p>To add responsive features to the navbar, the content that you want to be collapsed needs to be wrapped in a &lt;div&gt; with classes <b>.collapse, .navbar-collapse</b>. The collapsing nature is tripped by a button that has the class of <b>.navbar-toggle</b> and then features two data- elements. The first, <b>data-toggle</b>, is used to tell the JavaScript what to do with the button, and the second, <b>data-target</b>, indicates which element to toggle. Then <spans> with a class <b>.icon-bar</b> create what we like to call the hamburger button. This will toggle the elements that are in the <b>.nav-collapse</b> &lt;div&gt;. For this feature to work, you need to include the <a href="/bootstrap/bootstrap_collapse_plugin.htm">Bootstrap Collapse Plugin</a>.</p>
+<p>The following example demonstrates this &minus;</p>
+<div class="demo-view">
+<a href="http://tpcg.io/2zJCLf" target="_blank" rel="nofollow" class="demo"><i class="fa-external-link"></i> Live Demo</a>
+</div>
+<pre class="prettyprint notranslate">
+&lt;nav class = "navbar navbar-default" role = "navigation"&gt;
+   
+   &lt;div class = "navbar-header"&gt;
+      &lt;button type = "button" class = "navbar-toggle" 
+         data-toggle = "collapse" data-target = "#example-navbar-collapse"&gt;
+         &lt;span class = "sr-only"&gt;Toggle navigation&lt;/span&gt;
+         &lt;span class = "icon-bar"&gt;&lt;/span&gt;
+         &lt;span class = "icon-bar"&gt;&lt;/span&gt;
+         &lt;span class = "icon-bar"&gt;&lt;/span&gt;
+      &lt;/button&gt;
+    
+      &lt;a class = "navbar-brand" href = "#"&gt;TutorialsPoint&lt;/a&gt;
+   &lt;/div&gt;
+   
+   &lt;div class = "collapse navbar-collapse" id = "example-navbar-collapse"&gt;
+  
+      &lt;ul class = "nav navbar-nav"&gt;
+         &lt;li class = "active"&gt;&lt;a href = "#"&gt;iOS&lt;/a&gt;&lt;/li&gt;
+         &lt;li&gt;&lt;a href = "#"&gt;SVN&lt;/a&gt;&lt;/li&gt;
+      
+         &lt;li class = "dropdown"&gt;
+            &lt;a href = "#" class = "dropdown-toggle" data-toggle = "dropdown"&gt;
+               Java 
+               &lt;b class = "caret"&gt;&lt;/b&gt;
+            &lt;/a&gt;
+            
+            &lt;ul class = "dropdown-menu"&gt;
+               &lt;li&gt;&lt;a href = "#"&gt;jmeter&lt;/a&gt;&lt;/li&gt;
+               &lt;li&gt;&lt;a href = "#"&gt;EJB&lt;/a&gt;&lt;/li&gt;
+               &lt;li&gt;&lt;a href = "#"&gt;Jasper Report&lt;/a&gt;&lt;/li&gt;
+               
+               &lt;li class = "divider"&gt;&lt;/li&gt;
+               &lt;li&gt;&lt;a href = "#"&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+               
+               &lt;li class = "divider"&gt;&lt;/li&gt;
+               &lt;li&gt;&lt;a href = "#"&gt;One more separated link&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+         &lt;/li&gt;
+      &lt;/ul&gt;
+   &lt;/div&gt;
+&lt;/nav&gt;
+</pre>
+
+<!-- <img src="/bootstrap/images/responsivenavbar_demo.jpg" alt="Responsive Navbar Demo" /> -->
+<h2>Forms in Navbar</h2>
+<p>Instead of using the default class-based forms from Chapter, forms that are in the navbar, use the <b>.navbar-form</b> class. This ensures that the form’s proper vertical alignment and collapsed behavior in narrow viewports. Use the alignment options (explained in Component alignment section) to decide where it resides within the navbar content.</p>
+<p>The following example demonstrates this &minus;</p>
+<div class="demo-view">
+<a href="http://tpcg.io/5zB9oR" target="_blank" rel="nofollow" class="demo"><i class="fa-external-link"></i> Live Demo</a>
+</div>
+<pre class="prettyprint notranslate">
+&lt;nav class = "navbar navbar-default" role = "navigation"&gt;
+   
+   &lt;div class = "navbar-header"&gt;
+      &lt;a class = "navbar-brand" href = "#"&gt;TutorialsPoint&lt;/a&gt;
+   &lt;/div&gt;
+   
+   &lt;div&gt;
+      &lt;form class = "navbar-form navbar-left" role = "search"&gt;
+         
+         &lt;div class = "form-group"&gt;
+            &lt;input type = "text" class = "form-control" placeholder = "Search"&gt;
+         &lt;/div&gt;
+         &lt;button type = "submit" class = "btn btn-default"&gt;Submit&lt;/button&gt;
+         
+      &lt;/form&gt;    
+   &lt;/div&gt;
+   
+&lt;/nav&gt;
+</pre>
+
+<h2>Buttons in Navbar</h2>
+<p>You can add buttons using class <b>.navbar-btn</b>  to &lt;button&gt; elements not residing in a &lt;form&gt; to vertically center them in the navbar. <b>.navbar-btn</b> can be used on &lt;a&gt; and &lt;input&gt; elements.</p>
+<blockquote>Do not use <b>.navbar-btn</b> nor the standard on &lt;a&gt; elements within <b>.navbar-nav</b>.</blockquote>
+<p>The following example demonstrates this &minus;</p>
+<div class="demo-view">
+<a href="http://tpcg.io/KaffsP" target="_blank" rel="nofollow" class="demo"><i class="fa-external-link"></i> Live Demo</a>
+</div>
+<pre class="prettyprint notranslate">
+&lt;nav class = "navbar navbar-default" role = "navigation"&gt;
+   
+   &lt;div class = "navbar-header"&gt;
+      &lt;a class = "navbar-brand" href = "#"&gt;TutorialsPoint&lt;/a&gt;
+   &lt;/div&gt;
+   
+   &lt;div&gt;
+      &lt;form class = "navbar-form navbar-left" role = "search"&gt;
+         &lt;div class = "form-group"&gt;
+            &lt;input type = "text" class = "form-control" placeholder = "Search"&gt;
+         &lt;/div&gt;
+      
+         &lt;button type = "submit" class = "btn btn-default"&gt;Submit Button&lt;/button&gt;
+      &lt;/form&gt;  
+    
+      &lt;button type = "button" class = "btn btn-default navbar-btn"&gt;Navbar Button&lt;/button&gt;
+   &lt;/div&gt;
+&lt;/nav&gt;
+</pre>
+<h2>Text in Navbar</h2>
+<p>To wrap strings of text in an element use the class <b>.navbar-text</b>. This is usually used with &lt;p&gt; tag for proper leading and color. The following example demonstrates this &minus;</p>
+<div class="demo-view">
+<a href="http://tpcg.io/O7MfWQ" target="_blank" rel="nofollow" class="demo"><i class="fa-external-link"></i> Live Demo</a>
+</div>
+<pre class="prettyprint notranslate">
+&lt;nav class = "navbar navbar-default" role = "navigation"&gt;
+   &lt;div class = "navbar-header"&gt;
+      &lt;a class = "navbar-brand" href = "#"&gt;TutorialsPoint&lt;/a&gt;
+   &lt;/div&gt;
+   
+   &lt;div&gt;
+      &lt;p class = "navbar-text"&gt;Signed in as Thomas&lt;/p&gt;
+   &lt;/div&gt;
+&lt;/nav&gt;
+</pre>
+<h2>Non-nav Links</h2>
+<p>If you want to use the standard links that are not within the regular navbar navigation component, then use the class <b>navbar-link</b> to add proper colors for the default and inverse navbar options as shown in the following example &minus;</p>
+<div class="demo-view">
+<a href="http://tpcg.io/hqgwR4" target="_blank" rel="nofollow" class="demo"><i class="fa-external-link"></i> Live Demo</a>
+</div>
+<pre class="prettyprint notranslate">
+&lt;nav class = "navbar navbar-default" role = "navigation"&gt;
+   &lt;div class = "navbar-header"&gt;
+      &lt;a class = "navbar-brand" href = "#"&gt;TutorialsPoint&lt;/a&gt;
+   &lt;/div&gt;
+   
+   &lt;div&gt;
+      &lt;p class = "navbar-text navbar-right"&gt;
+         Signed in as 
+         &lt;a href = "#" class = "navbar-link"&gt;Thomas&lt;/a&gt;
+      &lt;/p&gt;
+   &lt;/div&gt;
+&lt;/nav&gt;
+</pre>
+<!-- <img src="/bootstrap/images/nonnavlinks_demo.jpg" alt="Non-Nav Links Demo" /> -->
+<h2>Component Alignment</h2>
+<p>You can align the components like <i>nav links, forms, buttons, or text</i> to left or right in a navbar using the utility classes <b>.navbar-left</b> or <b>.navbar-right</b>. Both classes will add a CSS float in the specified direction. The following example demonstrates this &minus;</p>
+<div class="demo-view">
+<a href="http://tpcg.io/z446he" target="_blank" rel="nofollow" class="demo"><i class="fa-external-link"></i> Live Demo</a>
+</div>
+<pre class="prettyprint notranslate">
+&lt;nav class = "navbar navbar-default" role = "navigation"&gt;
+   
+   &lt;div class = "navbar-header"&gt;
+      &lt;a class = "navbar-brand" href = "#"&gt;TutorialsPoint&lt;/a&gt;
+   &lt;/div&gt;
+   
+   &lt;div&gt;
+      
+      &lt;!--Left Align--&gt;
+      &lt;ul class = "nav navbar-nav navbar-left"&gt;
+         &lt;li class = "dropdown"&gt;
+            &lt;a href = "#" class = "dropdown-toggle" data-toggle = "dropdown"&gt;
+               Java 
+               &lt;b class = "caret"&gt;&lt;/b&gt;
+            &lt;/a&gt;
+            
+            &lt;ul class = "dropdown-menu"&gt;
+               &lt;li&gt;&lt;a href = "#"&gt;jmeter&lt;/a&gt;&lt;/li&gt;
+               &lt;li&gt;&lt;a href = "#"&gt;EJB&lt;/a&gt;&lt;/li&gt;
+               &lt;li&gt;&lt;a href = "#"&gt;Jasper Report&lt;/a&gt;&lt;/li&gt;
+               
+               &lt;li class = "divider"&gt;&lt;/li&gt;
+               &lt;li&gt;&lt;a href = "#"&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+               
+               &lt;li class = "divider"&gt;&lt;/li&gt;
+               &lt;li&gt;&lt;a href = "#"&gt;One more separated link&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+            
+         &lt;/li&gt;
+      &lt;/ul&gt;
+      
+      &lt;form class = "navbar-form navbar-left" role = "search"&gt;
+         &lt;button type = "submit" class = "btn btn-default"&gt;Left align-Submit Button&lt;/button&gt;
+      &lt;/form&gt; 
+      
+      &lt;p class = "navbar-text navbar-left"&gt;Left align-Text&lt;/p&gt;
+      
+      &lt;!--Right Align--&gt;
+      &lt;ul class = "nav navbar-nav navbar-right"&gt;
+         &lt;li class = "dropdown"&gt;
+            &lt;a href = "#" class = "dropdown-toggle" data-toggle = "dropdown"&gt;
+               Java 
+               &lt;b class = "caret"&gt;&lt;/b&gt;
+            &lt;/a&gt;
+            
+            &lt;ul class = "dropdown-menu"&gt;
+               &lt;li&gt;&lt;a href = "#"&gt;jmeter&lt;/a&gt;&lt;/li&gt;
+               &lt;li&gt;&lt;a href = "#"&gt;EJB&lt;/a&gt;&lt;/li&gt;
+               &lt;li&gt;&lt;a href = "#"&gt;Jasper Report&lt;/a&gt;&lt;/li&gt;
+               
+               &lt;li class = "divider"&gt;&lt;/li&gt;
+               &lt;li&gt;&lt;a href = "#"&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+               
+               &lt;li class = "divider"&gt;&lt;/li&gt;
+               &lt;li&gt;&lt;a href = "#"&gt;One more separated link&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+            
+         &lt;/li&gt;
+      &lt;/ul&gt;
+      
+      &lt;form class = "navbar-form navbar-right" role = "search"&gt;
+         &lt;button type = "submit" class = "btn btn-default"&gt;
+            Right align-Submit Button
+         &lt;/button&gt;
+      &lt;/form&gt; 
+    
+      &lt;p class = "navbar-text navbar-right"&gt;Right align-Text&lt;/p&gt;
+      
+   &lt;/div&gt;
+&lt;/nav&gt;
+</pre>
+<!-- <img src="/bootstrap/images/compalignment_demo.jpg" alt="Component Alignment Demo" /> -->
+<h2>Fixed to Top</h2>
+<p>The Bootstrap navbar can be dynamic in its positioning. By default, it is a block-level element that takes its positioning based on its placement in the HTML. With a few helper classes, you can place it either on the top or bottom of the page, or you can make it scroll statically with the page.</p>
+<p>If you want the navbar fixed to the top, add class <b>.navbar-fixed-top</b> to the <b>.navbar class</b>. The following example demonstrates this &minus;</p>
+<blockquote>To prevent the navbar from sitting on top of other content in the body of the page, add at least 50 pixels of padding to the &lt;body&gt; tag or try your own values.</blockquote>
+<div class="demo-view">
+<a href="http://tpcg.io/VJMfnA" target="_blank" rel="nofollow" class="demo"><i class="fa-external-link"></i> Live Demo</a>
+</div>
+<pre class="prettyprint notranslate">
+
+&lt;nav class = "navbar navbar-default navbar-fixed-top" role = "navigation"&gt;
+   
+   &lt;div class = "navbar-header"&gt;
+      &lt;a class = "navbar-brand" href = "#"&gt;TutorialsPoint&lt;/a&gt;
+   &lt;/div&gt;
+   
+   &lt;div&gt;
+      &lt;ul class = "nav navbar-nav"&gt;
+         &lt;li class = "active"&gt;&lt;a href = "#"&gt;iOS&lt;/a&gt;&lt;/li&gt;
+         &lt;li&gt;&lt;a href = "#"&gt;SVN&lt;/a&gt;&lt;/li&gt;
+         
+         &lt;li class = "dropdown"&gt;
+            &lt;a href = "#" class = "dropdown-toggle" data-toggle = "dropdown"&gt;
+               Java
+               &lt;b class = "caret"&gt;&lt;/b&gt;
+            &lt;/a&gt;
+            
+            &lt;ul class = "dropdown-menu"&gt;
+               &lt;li&gt;&lt;a href = "#"&gt;jmeter&lt;/a&gt;&lt;/li&gt;
+               &lt;li&gt;&lt;a href = "#"&gt;EJB&lt;/a&gt;&lt;/li&gt;
+               &lt;li&gt;&lt;a href = "#"&gt;Jasper Report&lt;/a&gt;&lt;/li&gt;
+               
+               &lt;li class = "divider"&gt;&lt;/li&gt;
+               &lt;li&gt;&lt;a href = "#"&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+               
+               &lt;li class = "divider"&gt;&lt;/li&gt;
+               &lt;li&gt;&lt;a href = "#"&gt;One more separated link&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+            
+         &lt;/li&gt;
+      &lt;/ul&gt;
+   &lt;/div&gt;
+   
+&lt;/nav&gt;
+</pre>
+<!-- <img src="/bootstrap/images/fixedtotop_demo.jpg" alt="Fixed To Top Demo" /> -->
+<h2>Fixed to Bottom</h2>
+<p>If you want the navbar fixed to the bottom of the page, add class <b>.navbar-fixed-bottom</b> to the <b>.navbar class</b>. The following example demonstrates this &minus;</p>
+<div class="demo-view">
+<a href="http://tpcg.io/9tdhrv" target="_blank" rel="nofollow" class="demo"><i class="fa-external-link"></i> Live Demo</a>
+</div>
+<pre class="prettyprint notranslate">
+
+&lt;nav class = "navbar navbar-default navbar-fixed-bottom" role = "navigation"&gt;
+   
+   &lt;div class = "navbar-header"&gt;
+      &lt;a class = "navbar-brand" href = "#"&gt;TutorialsPoint&lt;/a&gt;
+   &lt;/div&gt;
+   
+   &lt;div&gt;
+      &lt;ul class = "nav navbar-nav"&gt;
+         &lt;li class = "active"&gt;&lt;a href = "#"&gt;iOS&lt;/a&gt;&lt;/li&gt;
+         &lt;li&gt;&lt;a href="#"&gt;SVN&lt;/a&gt;&lt;/li&gt;
+         
+         &lt;li class = "dropdown"&gt;
+            &lt;a href = "#" class = "dropdown-toggle" data-toggle = "dropdown"&gt;
+               Java
+               &lt;b class ="caret"&gt;&lt;/b&gt;
+            &lt;/a&gt;
+            
+            &lt;ul class = "dropdown-menu"&gt;
+               &lt;li&gt;&lt;a href = "#"&gt;jmeter&lt;/a&gt;&lt;/li&gt;
+               &lt;li&gt;&lt;a href = "#"&gt;EJB&lt;/a&gt;&lt;/li&gt;
+               &lt;li&gt;&lt;a href = "#"&gt;Jasper Report&lt;/a&gt;&lt;/li&gt;
+               
+               &lt;li class = "divider"&gt;&lt;/li&gt;
+               &lt;li&gt;&lt;a href = "#"&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+               
+               &lt;li class = "divider"&gt;&lt;/li&gt;
+               &lt;li&gt;&lt;a href = "#"&gt;One more separated link&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+            
+         &lt;/li&gt;
+      &lt;/ul&gt;
+   &lt;/div&gt;
+&lt;/nav&gt;
+</pre>
+<!-- <img src="/bootstrap/images/fixedtobottom_demo.jpg" alt="Fixed To Bottom Demo" /> -->
+<h2>Static Top</h2>
+<p>To create a navbar that scrolls with the page, add the <b>.navbar-static-top</b> class. This class does not require adding the padding to the &lt;body&gt;.</p>
+<div class="demo-view">
+<a href="http://tpcg.io/rTlfEp" target="_blank" rel="nofollow" class="demo"><i class="fa-external-link"></i> Live Demo</a>
+</div>
+<pre class="prettyprint notranslate">
+
+&lt;nav class = "navbar navbar-default navbar-static-top" role = "navigation"&gt;
+   
+   &lt;div class = "navbar-header"&gt;
+      &lt;a class = "navbar-brand" href = "#"&gt;TutorialsPoint&lt;/a&gt;
+   &lt;/div&gt;
+   
+   &lt;div&gt;
+      &lt;ul class = "nav navbar-nav"&gt;
+         &lt;li class = "active"&gt;&lt;a href = "#"&gt;iOS&lt;/a&gt;&lt;/li&gt;
+         &lt;li&gt;&lt;a href = "#"&gt;SVN&lt;/a&gt;&lt;/li&gt;
+         
+         &lt;li class = "dropdown"&gt;
+            &lt;a href = "#" class = "dropdown-toggle" data-toggle = "dropdown"&gt;
+               Java
+               &lt;b class = "caret"&gt;&lt;/b&gt;
+            &lt;/a&gt;
+        
+            &lt;ul class = "dropdown-menu"&gt;
+               &lt;li&gt;&lt;a href = "#"&gt;jmeter&lt;/a&gt;&lt;/li&gt;
+               &lt;li&gt;&lt;a href = "#"&gt;EJB&lt;/a&gt;&lt;/li&gt;
+               &lt;li&gt;&lt;a href = "#"&gt;Jasper Report&lt;/a&gt;&lt;/li&gt;
+               
+               &lt;li class = "divider"&gt;&lt;/li&gt;
+               &lt;li&gt;&lt;a href = "#"&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+               
+               &lt;li class = "divider"&gt;&lt;/li&gt;
+               &lt;li&gt;&lt;a href = "#"&gt;One more separated link&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+            
+         &lt;/li&gt;
+      &lt;/ul&gt;
+   &lt;/div&gt;
+&lt;/nav&gt;
+</pre>
+<!-- <img src="/bootstrap/images/statictop_demo.jpg" alt="Static Top Demo" /> -->
+<h2>Inverted Navbar</h2>
+<p>To create an inverted navbar with a black background and with white text, simply add the <b>.navbar-inverse</b> class to the <b>.navbar</b> class as demonstrated in the following example &minus;</p>
+<blockquote>To prevent the navbar from sitting on top of other content in the body of the page, add at least 50 pixels of padding to the &lt;body&gt; tag or try your own values.</blockquote>
+<div class="demo-view">
+<a href="http://tpcg.io/l74EVj" target="_blank" rel="nofollow" class="demo"><i class="fa-external-link"></i> Live Demo</a>
+</div>
+<pre class="prettyprint notranslate">
+&lt;nav class = "navbar navbar-inverse" role = "navigation"&gt;
+   
+   &lt;div class = "navbar-header"&gt;
+      &lt;a class = "navbar-brand" href = "#"&gt;TutorialsPoint&lt;/a&gt;
+   &lt;/div&gt;
+   
+   &lt;div&gt;
+      &lt;ul class = "nav navbar-nav"&gt;
+         &lt;li class = "active"&gt;&lt;a href = "#"&gt;iOS&lt;/a&gt;&lt;/li&gt;
+         &lt;li&gt;&lt;a href = "#"&gt;SVN&lt;/a&gt;&lt;/li&gt;
+         &lt;li class = "dropdown"&gt;
+            &lt;a href = "#" class = "dropdown-toggle" data-toggle = "dropdown"&gt;
+               Java
+               &lt;b class = "caret"&gt;&lt;/b&gt;
+            &lt;/a&gt;
+            
+            &lt;ul class = "dropdown-menu"&gt;
+               &lt;li&gt;&lt;a href = "#"&gt;jmeter&lt;/a&gt;&lt;/li&gt;
+               &lt;li&gt;&lt;a href = "#"&gt;EJB&lt;/a&gt;&lt;/li&gt;
+               &lt;li&gt;&lt;a href = "#"&gt;Jasper Report&lt;/a&gt;&lt;/li&gt;
+               
+               &lt;li class = "divider"&gt;&lt;/li&gt;
+               &lt;li&gt;&lt;a href = "#"&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+               
+               &lt;li class = "divider"&gt;&lt;/li&gt;
+               &lt;li&gt;&lt;a href = "#"&gt;One more separated link&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+            
+         &lt;/li&gt;
+      &lt;/ul&gt;
+   &lt;/div&gt;
+&lt;/nav&gt;
+</pre>
+<p>Bootstrap provides some handful helper classes, for faster mobile-friendly development. These can be used for showing and hiding content by device via media query, combined with large, small, and medium devices.</p>
+<p>Use these sparingly and avoid creating entirely different versions of the same site. <b>Responsive utilities are currently only available for block and table toggling</b>.</p>
+<table class="table table-bordered" style="text-align:center;">
+<tr>
+<th style="text-align:center;">Classes</th>
+<th style="text-align:center;">Devices</th>
+</tr>
+<tr>
+<td>.visible-xs</td>
+<td>Extra small (less than 768px) <i>visible</i></td>
+</tr>
+<tr>
+<td>.visible-sm</td>
+<td>Small (up to 768 px) <i>visible</i></td>
+</tr>
+<tr>
+<td>.visible-md</td>
+<td>Medium (768 px to 991 px) <i>visible</i></td>
+</tr>
+<tr>
+<td>.visible-lg</td>
+<td>Larger (992 px and above) <i>visible</i></td>
+</tr>
+<tr>
+<td>.hidden-xs</td>
+<td>Extra small (less than 768px) <i>hidden</i></td>
+</tr>
+<tr>
+<td>.hidden-sm</td>
+<td>Small (up to 768 px) <i>hidden</i></td>
+</tr>
+<tr>
+<td>.hidden-md</td>
+<td>Medium (768 px to 991 px) <i>hidden</i></td>
+</tr>
+<tr>
+<td>.hidden-lg</td>
+<td>Larger (992 px and above) <i>hidden</i></td>
+</tr>
+</table>
+<h2>Print Classes</h2>
+<p>The following table lists the print classes. Use these for toggling the content for print.</p>
+<table class="table table-bordered" style="text-align:center;">
+<tr>
+<th style="text-align:center;">Classes</th>
+<th style="text-align:center;">Print</th>
+</tr>
+<tr>
+<td>.visible-print</td>
+<td>Yes Visible</td>
+</tr>
+<tr>
+<td>.hidden-print</td>
+<td>Visible only to browser not to print.</td>
+</tr>
+</table>
+<h2>Example</h2>
+<p>The following example demonstrates the use of above listed helper classes. Resize your browser or load the example on different devices to test the responsive utility classes.</p>
+<div class="demo-view">
+<a href="http://tpcg.io/Hr7jsJ" target="_blank" rel="nofollow" class="demo"><i class="fa-external-link"></i> Live Demo</a>
+</div>
+<pre class="prettyprint notranslate">
+&lt;div class = "container" style = "padding: 40px;"&gt;
+   &lt;div class = "row visible-on"&gt;
+      
+      &lt;div class = "col-xs-6 col-sm-3" style = "background-color: #dedef8;
+         box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;"&gt;
+         
+         &lt;span class = "hidden-xs"&gt;Extra small&lt;/span&gt;
+         &lt;span class = "visible-xs"&gt;&#10004; Visible on x-small&lt;/span&gt;
+      &lt;/div&gt;
+      
+      &lt;div class = "col-xs-6 col-sm-3" style = "background-color: #dedef8;
+         box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;"&gt;
+         
+         &lt;span class = "hidden-sm"&gt;Small&lt;/span&gt;
+         &lt;span class = "visible-sm"&gt;&#10004; Visible on small&lt;/span&gt;
+      &lt;/div&gt;
+      
+      &lt;div class = "clearfix visible-xs"&gt;&lt;/div&gt;
+      
+      &lt;div class = "col-xs-6 col-sm-3" style = "background-color: #dedef8;
+         box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;"&gt;
+         
+         &lt;span class = "hidden-md"&gt;Medium&lt;/span&gt;
+         &lt;span class = "visible-md"&gt;&#10004; Visible on medium&lt;/span&gt;
+      &lt;/div&gt;
+      
+      &lt;div class = "col-xs-6 col-sm-3" style = "background-color: #dedef8;
+         box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;"&gt;
+         
+         &lt;span class = "hidden-lg"&gt;Large&lt;/span&gt;
+         &lt;span class = "visible-lg"&gt;&#10004; Visible on large&lt;/span&gt;
+      &lt;/div&gt;
+      
+   &lt;/div&gt;  
+&lt;/div&gt;
+</pre>
+    <br>
+
+    <footer>
+        <div class="container bg-secondary">
+        <div class="row">
+          <div class="col fw-bolder">
+            <br>
+           Contact us --
+           <br>
+            Email : 
+            <br>
+            admin@primathink.com
+        </div>
+        <div class="col fw-bold">
+          <br><br>
+          Phone : 
+          <br>
+          +91 23456789<br>
+          +91 29876421
+        </div>
+        <div class="col fw-bolder">
+          <br><br>
+          Address : 
+          <br>
+          Primathink WebD Head Office,<br>
+          Nagpur-440033,<br>
+          Maharashtra
+        </div>
+        <br>
+      </div>
+      <br>
+    </div>
+    </footer>
+    <br>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

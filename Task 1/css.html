@@ -1,0 +1,755 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>PrimaThink Web Devlopment Training Co.</title>
+  </head>
+  <body>
+     <marquee><h2>PrimaThink Web Devlopment Training Co.</h2></marquee>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+     <a class="navbar-brand" href="#">
+      <img src="img/img1_navbar.jpg" alt="" width="30" height="30">
+        PrimaThink
+    </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="course.html">Course</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="faculty.html">Faculty</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="/langu" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Languages 
+           </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="html.html">HTML</a></li>
+              <li><a class="dropdown-item" href="css.html">CSS</a></li>
+              <li><a class="dropdown-item" href="javascript.html">JavaScript</a></li>
+              <li><a class="dropdown-item" href="php.html">PHP</a></li>
+              <li><a class="dropdown-item" href="bootstrap.html">Bootstrap</a></li>
+              <li><a class="dropdown-item" href="react.html">React</a></li>
+              </ul>
+            </li>
+             </li>
+          <li class="nav-item">
+            <a class="nav-link" href="books.html">Books</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Contact Us</a>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <br>
+    <h1>CSS Tutorial</h1> 
+    <img src="img/img2_card.jpg" alt="" width="300" height="300"> <br>
+    <br>
+<p><b>CSS</b> is used to control the style of a web document in a simple and easy way.</p>
+<p><b>CSS</b> is the acronym for <b>"Cascading Style Sheet"</b>. This tutorial covers both the versions CSS1,CSS2 and CSS3, and gives a complete understanding of CSS, starting from its basics to advanced concepts.</p>
+<h2>Why to Learn CSS?</h2>
+<p><b>Cascading Style Sheets</b>, fondly referred to as <b>CSS</b>, is a simple design language intended to simplify the process of making web pages presentable.</p>
+<p><b>CSS</b> is a MUST for students and working professionals to become a great Software Engineer specially when they are working in Web Development Domain. I will list down some of the key advantages of learning CSS:</p>
+<ul class="list">
+<li><p><b>Create Stunning Web site</b> - CSS handles the look and feel part of a web page. Using CSS, you can control the color of the text, the style of fonts, the spacing between paragraphs, how columns are sized and laid out, what background images or colors are used, layout designs,variations in display for different devices and screen sizes as well as a variety of other effects.</p></li>
+<li><p><b>Become a web designer</b> - If you want to start a carrer as a professional web designer, HTML and CSS designing is a must skill.</p></li>
+<li><p><b>Control web</b> - CSS is easy to learn and understand but it provides powerful control over the presentation of an HTML document. Most commonly, CSS is combined with the markup languages HTML or XHTML.</p></li>
+<li><p><b>Learn other languages</b> - Once you understands the basic of HTML and CSS then other related technologies like javascript, php, or angular are become easier to understand.</p></li>
+</ul>
+<h2>Hello World using CSS.</h2>
+<p>Just to give you a little excitement about CSS, I'm going to give you a small conventional CSS Hello World program, You can try it using Demo link.</p>
+<div class="demo-view">
+<a href="http://tpcg.io/qfPFF4" target="_blank" rel="nofollow" class="demo"><i class="fa-external-link"></i> Live Demo</a>
+</div>
+<pre class="prettyprint notranslate">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;title&gt;This is document title&lt;/title&gt;
+      &lt;style&gt;
+      h1 {
+         color: #36CFFF; 
+      }
+      &lt;/style&gt;
+   &lt;/head&gt;  
+   &lt;body&gt;
+      &lt;h1&gt;Hello World!&lt;/h1&gt;
+   &lt;/body&gt;  
+&lt;/html&gt;
+</pre>
+<h2>Applications of CSS</h2>
+<p>As mentioned before, CSS is one of the most widely used style language over the web. I'm going to list few of them here:</p>
+<ul class="list">
+<li><p><b>CSS saves time</b> - You can write CSS once and then reuse same sheet in multiple HTML pages. You can define a style for each HTML element and apply it to as many Web pages as you want.</p></li>
+<li><p><b>Pages load faster</b> - If you are using CSS, you do not need to write HTML tag attributes every time. Just write one CSS rule of a tag and apply it to all the occurrences of that tag. So less code means faster download times.</p></li>
+<li><p><b>Easy maintenance</b> - To make a global change, simply change the style, and all elements in all the web pages will be updated automatically.</p></li>
+<li><p><b>Superior styles to HTML</b> - CSS has a much wider array of attributes than HTML, so you can give a far better look to your HTML page in comparison to HTML attributes.</p></li>
+<li><p><b>Multiple Device Compatibility</b> - Style sheets allow content to be optimized for more than one type of device. By using the same HTML document, different versions of a website can be presented for handheld devices such as PDAs and cell phones or for printing.</p></li>
+<li><p><b>Global web standards </b>- Now HTML attributes are being deprecated and it is being recommended to use CSS. So its a good idea to start using CSS in all the HTML pages to make them compatible to future browsers.</p></li>
+</ul>
+<h2>Audience</h2>
+<p>This <b>CSS tutorial</b> will help both students as well as professionals who want to make their websites or personal blogs more attractive.</p>
+<h2>Prerequisites</h2>
+<p>You should be familiar with:</p>
+<ul class="list">
+<li>Basic word processing using any text editor.</li>
+<li>How to create directories and files.</li>
+<li>How to navigate through different directories.</li>
+<li>Internet browsing using popular browsers like Internet Explorer or Firefox.</li>
+<li>Developing simple Web Pages using HTML or XHTML.</li>
+</ul>
+
+<h1>CSS - Syntax</h1>
+<hr />
+<div id="google-top-ads">
+<div class="clearer"></div>
+<p>A CSS comprises of style rules that are interpreted by the browser and then applied to the corresponding elements in your document. A style rule is made of three parts &minus;</p>
+<ul class="list">
+<li><p><b>Selector</b> &minus; A selector is an HTML tag at which a style will be applied. This could be any tag like &lt;h1&gt; or &lt;table&gt; etc.</p></li>
+<li><p><b>Property</b> &minus; A property is a type of attribute of HTML tag. Put simply, all the HTML attributes are converted into CSS properties. They could be <i>color</i>, <i>border</i> etc.</p></li>
+<li><p><b>Value</b> &minus; Values are assigned to properties. For example, <i>color</i> property can have value either <i>red</i> or <i>#F1F1F1</i> etc.</p></li>
+</ul>
+<p>You can put CSS Style Rule Syntax as follows &minus;</p>
+<pre class="result notranslate">
+selector { property: value }
+</pre> 
+<p></p>
+<p><b>Example</b> &minus; You can define a table border as follows &minus;</p>
+<pre class="result notranslate">
+table{ border :1px solid #C00; }
+</pre> 
+<p>Here table is a selector and border is a property and given value <i>1px solid #C00</i> is the value of that property.</p>
+<p>You can define selectors in various simple ways based on your comfort. Let me put these selectors one by one.</p>
+<h2>The Type Selectors</h2>
+<p>This is the same selector we have seen above. Again, one more example to give a color to all level 1 headings &minus;</p>
+<pre class="prettyprint notranslate">
+h1 {
+   color: #36CFFF; 
+}
+</pre> 
+<h2>The Universal Selectors</h2>
+<p>Rather than selecting elements of a specific type, the universal selector quite simply matches the name of any element type &minus;</p>
+<pre class="prettyprint notranslate">
+* { 
+   color: #000000; 
+}
+</pre> 
+<p>This rule renders the content of every element in our document in black.</p>
+<h2>The Descendant Selectors</h2>
+<p>Suppose you want to apply a style rule to a particular element only when it lies inside a particular element. As given in the following example, style rule will apply to &lt;em&gt; element only when it lies inside &lt;ul&gt; tag.</p>
+<pre class="prettyprint notranslate">
+ul em {
+   color: #000000; 
+}
+</pre> 
+<h2>The Class Selectors</h2>
+<p>You can define style rules based on the class attribute of the elements. All the elements having that class will be formatted according to the defined rule.</p>
+<pre class="prettyprint notranslate">
+.black {
+   color: #000000; 
+}
+</pre> 
+<p>This rule renders the content in black for every element with class attribute set to <i>black</i> in our document. You can make it a bit more particular. For example &minus;</p>
+<pre class="prettyprint notranslate">
+h1.black {
+   color: #000000; 
+}
+</pre> 
+<p>This rule renders the content in black for only &lt;h1&gt; elements with class attribute set to <i>black</i>.</p>
+<p>You can apply more than one class selectors to given element. Consider the following example &minus;</p>
+<pre class="prettyprint notranslate">
+&lt;p class = "center bold"&gt;
+   This para will be styled by the classes <i>center</i> and <i>bold</i>.
+&lt;/p&gt;
+</pre> 
+<h2>The ID Selectors</h2>
+<p>You can define style rules based on the <i>id</i> attribute of the elements. All the elements having that <i>id</i> will be formatted according to the defined rule.</p>
+<pre class="prettyprint notranslate">
+#black {
+   color: #000000; 
+}
+</pre> 
+<p>This rule renders the content in black for every element with <i>id</i> attribute set to <i>black</i> in our document. You can make it a bit more particular. For example &minus;</p>
+<pre class="prettyprint notranslate">
+h1#black {
+   color: #000000; 
+}
+</pre> 
+<p>This rule renders the content in black for only &lt;h1&gt; elements with <i>id</i> attribute set to <i>black</i>. </p>
+<p>The true power of <i>id</i> selectors is when they are used as the foundation for descendant selectors, For example &minus;</p>
+<pre class="prettyprint notranslate">
+#black h2 {
+   color: #000000; 
+}
+</pre> 
+<p>In this example all level 2 headings will be displayed in black color when those headings will lie with in tags having <i>id</i> attribute set to <i>black</i>.</p>
+<h2>The Child Selectors</h2>
+<p>You have seen the descendant selectors. There is one more type of selector, which is very similar to descendants but have different functionality. Consider the following example &minus;</p>
+<pre class="prettyprint notranslate">
+body &gt; p {
+   color: #000000; 
+}
+</pre> 
+<p>This rule will render all the paragraphs in black if they are direct child of &lt;body&gt; element. Other paragraphs put inside other elements like &lt;div&gt; or &lt;td&gt would not have any effect of this rule.</p>
+<h2>The Attribute Selectors</h2>
+<p>You can also apply styles to HTML elements with particular attributes. The style rule below will match all the input elements having a type attribute with a value of <i>text</i> &minus;</p>
+<pre class="prettyprint notranslate">
+input[type = "text"] {
+   color: #000000; 
+}
+</pre> 
+<p>The advantage to this method is that the &lt;input type = "submit" /&gt; element is unaffected, and the color applied only to the desired text fields.</p>
+<p>There are following rules applied to attribute selector.</p>
+<ul class="list">
+<li><p><b>p[lang]</b> &minus; Selects all paragraph elements with a <i>lang</i> attribute.</p></li>
+<li><p><b>p[lang="fr"]</b> &minus; Selects all paragraph elements whose <i>lang</i> attribute has a value of exactly "fr".</p></li>
+<li><p><b>p[lang~="fr"]</b> &minus; Selects all paragraph elements whose <i>lang</i> attribute contains the word "fr".</p></li>
+<li><p><b>p[lang|="en"]</b> &minus; Selects all paragraph elements whose <i>lang</i> attribute contains values that are exactly "en", or begin with "en-".</p></li>
+</ul>
+<h2>Multiple Style Rules</h2>
+<p>You may need to define multiple style rules for a single element. You can define these rules to combine multiple properties and corresponding values into a single block as defined in the following example &minus;</p>
+<pre class="prettyprint notranslate">
+h1 {
+   color: #36C;
+   font-weight: normal;
+   letter-spacing: .4em;
+   margin-bottom: 1em;
+   text-transform: lowercase;
+}
+</pre> 
+<p>Here all the property and value pairs are separated by a <b>semicolon (;)</b>. You can keep them in a single line or multiple lines. For better readability, we keep them in separate lines.</p>
+<p>For a while, don't bother about the properties mentioned in the above block. These properties will be explained in the coming chapters and you can find complete detail about properties in CSS References <!--<a href="/css/css_references.htm">CSS References</a>.</p>-->
+<h2>Grouping Selectors</h2>
+<p>You can apply a style to many selectors if you like. Just separate the selectors with a comma, as given in the following example &minus;</p>
+<pre class="prettyprint notranslate">
+h1, h2, h3 {
+   color: #36C;
+   font-weight: normal;
+   letter-spacing: .4em;
+   margin-bottom: 1em;
+   text-transform: lowercase;
+}
+</pre> 
+<p>This define style rule will be applicable to h1, h2 and h3 element as well. The order of the list is irrelevant. All the elements in the selector will have the corresponding declarations applied to them.</p>
+<p>You can combine the various <i>id</i> selectors together as shown below &minus;</p>
+<pre class="prettyprint notranslate">
+#content, #footer, #supplement {
+   position: absolute;
+   left: 510px;
+   width: 200px;
+}
+</pre> 
+
+<h1>CSS - Inclusion</h1>
+<hr />
+
+<br>
+
+<div class="clearer"></div>
+<p>There are four ways to associate styles with your HTML document. Most commonly used methods are inline CSS and External CSS.</p>
+<h2>Embedded CSS - The &lt;style&gt; Element</h2>
+<p>You can put your CSS rules into an HTML document using the &lt;style&gt; element. This tag is placed inside the &lt;head&gt;...&lt;/head&gt; tags. Rules defined using this syntax will be applied to all the elements available in the document. Here is the generic syntax &minus;</p>
+<a href="http://tpcg.io/ow2sPD" target="_blank" rel="nofollow" class="demo"><i class="fa-external-link"></i> Live Demo</a>
+<pre class="prettyprint notranslate">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;style type = "text/css" media = "all"&gt;
+         body {
+            background-color: linen;
+         }
+         h1 {
+            color: maroon;
+            margin-left: 40px;
+         }
+      &lt;/style&gt;
+   &lt;/head&gt;   
+   &lt;body&gt;
+      &lt;h1&gt;This is a heading&lt;/h1&gt;
+      &lt;p&gt;This is a paragraph.&lt;/p&gt;
+   &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+<p>It will produce the following result &minus;</p>
+<h3>Attributes</h3>
+<p>Attributes associated with &lt;style&gt; elements are &minus;</p>
+<table class="table table-bordered">
+<tr>
+<th style="text-align:center;">Attribute</th>
+<th style="text-align:center;">Value</th>
+<th style="text-align:center;">Description</th>
+</tr>
+<tr>
+<td class="ts">type</td>
+<td class="ts">text/css</td>
+<td>Specifies the style sheet language as a content-type (MIME type). This is required attribute.</td>
+</tr>
+<tr>
+<td class="ts">media</td>
+<td><p>screen</p>
+<p>tty</p>
+<p>tv</p>
+<p>projection</p>
+<p>handheld</p>
+<p>print</p>
+<p>braille</p>
+<p>aural</p>
+<p>all</p>
+</td>
+<td style="vertical-align:middle;">Specifies the device the document will be displayed on. Default value is <i>all</i>. This is an optional attribute.</td>
+</tr>
+</table>
+<h2>Inline CSS - The <i>style</i> Attribute</h2>
+<p>You can use <i>style</i> attribute of any HTML element to define style rules. These rules will be applied to that element only. Here is the generic syntax &minus;</p>
+<pre class="result notranslate">
+&lt;element style = "...style rules...."&gt;
+</pre> 
+<h3>Attributes</h3>
+<table class="table table-bordered">
+<tr>
+<th style="text-align:center;">Attribute</th>
+<th style="text-align:center;width:15%">Value</th>
+<th style="text-align:center;">Description</th>
+</tr>
+<tr>
+<td class="ts">style</td>
+<td class="ts">style rules</td>
+<td>The value of <i>style</i> attribute is a combination of style declarations separated by semicolon (;).</td>
+</tr>
+</table>
+<h3>Example</h3>
+<p>Following is the example of inline CSS based on the above syntax &minus;</p>
+<a href="http://tpcg.io/tDUIUL" target="_blank" rel="nofollow" class="demo"><i class="fa-external-link"></i> Live Demo</a>
+<pre class="prettyprint notranslate">
+&lt;html&gt;
+   &lt;head&gt;
+   &lt;/head&gt;
+
+   &lt;body&gt;
+      &lt;h1 style = "color:#36C;"&gt; 
+         This is inline CSS 
+      &lt;/h1&gt;
+   &lt;/body&gt;
+&lt;/html&gt;
+</pre> 
+<p>It will produce the following result &minus;</p>
+<h2>External CSS - The &lt;link&gt; Element</h2>
+<p>The &lt;link&gt; element can be used to include an external stylesheet file in your HTML document.</p>
+<p>An external style sheet is a separate text file with <b>.css</b> extension. You define all the Style rules within this text file and then you can include this file in any HTML document using &lt;link&gt; element.</p>
+<p>Here is the generic syntax of including external CSS file &minus;</p>
+<pre class="result notranslate">
+&lt;head&gt;
+   &lt;link type = "text/css" href = "..." media = "..." /&gt;
+&lt;/head&gt;
+</pre> 
+<h3>Attributes</h3>
+<p>Attributes associated with &lt;style&gt; elements are &minus;</p>
+<table class="table table-bordered">
+<tr>
+<th style="text-align:center; width:15%;">Attribute</th>
+<th style="text-align:center; width:20%;">Value</th>
+<th style="text-align:center;">Description</th>
+</tr>
+<tr>
+<td class="ts">type</td>
+<td style="vertical-align:middle;">text css</td>
+<td>Specifies the style sheet language as a content-type (MIME type). This attribute is required.</td>
+</tr>
+<tr>
+<td class="ts">href</td>
+<td style="vertical-align:middle;">URL</td>
+<td>Specifies the style sheet file having Style rules. This attribute is a required.</td>
+</tr>
+<tr>
+<td class="ts">media</td>
+<td>
+<p>screen</p>
+<p>tty</p>
+<p>tv</p>
+<p>projection</p>
+<p>handheld</p>
+<p>print</p>
+<p>braille</p>
+<p>aural</p>
+<p>all</p>
+</td>
+<td style="vertical-align:middle;">Specifies the device the document will be displayed on. Default value is <i>all</i>. This is optional attribute.</td>
+</tr>
+</table>
+<h3>Example</h3>
+<p>Consider a simple style sheet file with a name <i>mystyle.css</i> having the following rules &minus;</p>
+<pre class="prettyprint notranslate">
+h1, h2, h3 {
+   color: #36C;
+   font-weight: normal;
+   letter-spacing: .4em;
+   margin-bottom: 1em;
+   text-transform: lowercase;
+}
+</pre> 
+<p>Now you can include this file <i>mystyle.css</i> in any HTML document as follows &minus;</p>
+<pre class="prettyprint notranslate">
+&lt;head&gt;
+   &lt;link type = "text/css" href = "mystyle.css" media = " all" /&gt;
+&lt;/head&gt;
+</pre> 
+<h2>Imported CSS - @import Rule</h2>
+<p>@import is used to import an external stylesheet in a manner similar to the &lt;link&gt; element. Here is the generic syntax of @import rule.</p>
+<pre class="prettyprint notranslate">
+&lt;head&gt;
+   @import "URL";
+&lt;/head&gt;
+</pre> 
+<p>Here URL is the URL of the style sheet file having style rules. You can use another syntax as well &minus;</p>
+<pre class="prettyprint notranslate">
+&lt;head&gt;
+   @import url("URL");
+&lt;/head&gt;
+</pre> 
+<h3>Example</h3>
+<p>Following is the example showing you how to import a style sheet file into HTML document &minus;</p>
+<pre class="result notranslate">
+&lt;head&gt;
+   @import "mystyle.css";
+&lt;/head&gt;
+</pre> 
+<h2>CSS Rules Overriding</h2>
+<p>We have discussed four ways to include style sheet rules in a an HTML document. Here is the rule to override any Style Sheet Rule.</p>
+<ul class="list">
+<li><p>Any inline style sheet takes highest priority. So, it will override any rule defined in &lt;style&gt;...&lt;/style&gt; tags or rules defined in any external style sheet file.</p></li>
+<li><p>Any rule defined in &lt;style&gt;...&lt;/style&gt; tags will override rules defined in any external style sheet file.</p></li>
+<li><p>Any rule defined in external style sheet file takes lowest priority, and rules defined in this file will be applied only when above two rules are not applicable.</p></li>
+</ul>
+<h2>Handling old Browsers</h2>
+<p>There are still many old browsers who do not support CSS. So, we should take care while writing our Embedded CSS in an HTML document. The following snippet shows how you can use comment tags to hide CSS from older browsers &minus;</p>
+<pre class="prettyprint notranslate">
+&lt;style type = "text/css"&gt;
+   &lt;!--
+      body, td {
+         color: blue;
+      }
+   --&gt;
+&lt;/style&gt;
+</pre> 
+<h2>CSS Comments</h2>
+<p>Many times, you may need to put additional comments in your style sheet blocks. So, it is very easy to comment any part in style sheet. You can simple put your comments inside /*.....this is a comment in style sheet.....*/.</p>
+<p>You can use /* ....*/ to comment multi-line blocks in similar way you do in C and C++ programming languages.</p>
+<h3>Example</h3>
+<a href="http://tpcg.io/P2Uj8x" target="_blank" rel="nofollow" class="demo"><i class="fa-external-link"></i> Live Demo</a>
+<pre class="prettyprint notranslate">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;style&gt;
+         p {
+            color: red;
+            /* This is a single-line comment */
+            text-align: center;
+         }
+         /* This is a multi-line comment */
+      &lt;/style&gt;
+   &lt;/head&gt;
+
+   &lt;body&gt;
+      &lt;p&gt;Hello World!&lt;/p&gt;
+   &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+<h1>CSS - Outlines</h1>
+<hr />
+</div>
+</div>
+<br>
+<div class="mui-container-fluid button-borders">
+<div class="pre-btn">
+<a href="/css/css_cursors.htm"><i class="fal fa-chevron-circle-left"></i> Previous Page</a>
+</div>
+<div class="nxt-btn">
+<a href="/css/css_dimension.htm">Next Page <i class="fal fa-chevron-circle-right"></i>&nbsp;</a>
+</div>
+</div>
+<div class="clearer"></div>
+<p>Outlines are very similar to borders, but there are few major differences as well &minus;</p>
+<ul class="list">
+<li><p>An outline does not take up space.</p></li>
+<li><p>Outlines do not have to be rectangular.</p></li>
+<li><p>Outline is always the same on all sides; you cannot specify different values for different sides of an element.</p></li>
+</ul>
+<p><b>NOTE</b> &minus; The outline properties are not supported by IE 6 or Netscape 7.</p>
+<p>You can set the following outline properties using CSS.</p>
+<ul class="list">
+<li><p>The <b>outline-width</b> property is used to set the width of the outline.</p></li>
+<li><p>The <b>outline-style</b> property is used to set the line style for the outline.</p></li>
+<li><p>The <b>outline-color</b> property is used to set the color of the outline.</p></li>
+<li><p>The <b>outline</b> property is used to set all the above three properties in a single statement.</p></li>
+</ul>
+<h2>The outline-width Property</h2>
+<p>The <i>outline-width</i> property specifies the width of the outline to be added to the box. Its value should be a length or one of the values <i>thin, medium, or thick,</i> just like the border-width attribute.</p>
+<p>A width of zero pixels means no outline.</p>
+<p>Here is an example &minus;</p>
+<div class="demo-view">
+<a href="http://tpcg.io/5MI175" target="_blank" rel="nofollow" class="demo"><i class="fa-external-link"></i> Live Demo</a>
+</div>
+<pre class="prettyprint notranslate">
+&lt;html&gt;
+   &lt;head&gt;
+   &lt;/head&gt;
+   
+   &lt;body&gt;
+      &lt;p style = "outline-width:thin; outline-style:solid;"&gt;
+         This text is having thin outline.
+      &lt;/p&gt;
+      &lt;br /&gt;
+      
+      &lt;p style = "outline-width:thick; outline-style:solid;"&gt;
+         This text is having thick outline.
+      &lt;/p&gt;
+      &lt;br /&gt;
+      
+      &lt;p style = "outline-width:5px; outline-style:solid;"&gt;
+         This text is having 5x outline.
+      &lt;/p&gt;
+   &lt;/body&gt;
+&lt;/html&gt; 
+</pre>
+<p>It will produce the following result &minus;</p>
+<h2>The outline-style Property</h2>
+<p>The <i>outline-style</i> property specifies the style for the line (solid, dotted, or dashed) that goes around an element. It can take one of the following values &minus;</p>
+<ul class="list">
+<li><p><b>none</b> &minus; No border. (Equivalent of outline-width:0;)</p></li>
+<li><p><b>solid</b> &minus; Outline is a single solid line.</p></li>
+<li><p><b>dotted</b> &minus; Outline is a series of dots.</p></li>
+<li><p><b>dashed</b> &minus; Outline is a series of short lines.</p></li>
+<li><p><b>double</b> &minus; Outline is two solid lines.</p></li>
+<li><p><b>groove</b> &minus; Outline looks as though it is carved into the page.</p></li>
+<li><p><b>ridge</b> &minus; Outline looks the opposite of groove.</p></li>
+<li><p><b>inset</b> &minus; Outline makes the box look like it is embedded in the page.</p></li>
+<li><p><b>outset</b> &minus; Outline makes the box look like it is coming out of the canvas.</p></li>
+<li><p><b>hidden</b> &minus; Same as none.</p></li>
+</ul>
+<p>Here is an example &minus;</p>
+<div class="demo-view">
+<a href="http://tpcg.io/8xOLTg" target="_blank" rel="nofollow" class="demo"><i class="fa-external-link"></i> Live Demo</a>
+</div>
+<pre class="prettyprint notranslate">
+&lt;html&gt;
+   &lt;head&gt;
+   &lt;/head&gt;
+   
+   &lt;body&gt;
+      &lt;p style = "outline-width:thin; outline-style:solid;"&gt;
+         This text is having thin solid  outline.
+      &lt;/p&gt;
+      &lt;br /&gt;
+      
+      &lt;p style = "outline-width:thick; outline-style:dashed;"&gt;
+         This text is having thick dashed outline.
+      &lt;/p&gt;
+      &lt;br /&gt;
+      
+      &lt;p style = "outline-width:5px;outline-style:dotted;"&gt;
+         This text is having 5x dotted outline.
+      &lt;/p&gt;
+   &lt;/body&gt;
+&lt;/html&gt; 
+</pre> 
+<p>It will produce the following result &minus;</p>
+<h2>The outline-color Property</h2>
+<p>The <i>outline-color</i> property allows you to specify the color of the outline. Its value should either be a color name, a hex color, or an RGB value, as with the color and border-color properties.</p>
+<p>Here is an example &minus;</p>
+<div class="demo-view">
+<a href="http://tpcg.io/qrlA0N" target="_blank" rel="nofollow" class="demo"><i class="fa-external-link"></i> Live Demo</a>
+</div>
+<pre class="prettyprint notranslate">
+&lt;html&gt;
+   &lt;head&gt;
+   &lt;/head&gt;
+   
+   &lt;body&gt;
+      &lt;p style = "outline-width:thin; outline-style:solid;outline-color:red"&gt;
+         This text is having thin solid red  outline.
+      &lt;/p&gt;
+      &lt;br /&gt;
+      
+      &lt;p style = "outline-width:thick; outline-style:dashed;outline-color:#009900"&gt;
+         This text is having thick dashed green outline.
+      &lt;/p&gt;
+      &lt;br /&gt;
+      
+      &lt;p style = "outline-width:5px;outline-style:dotted;outline-color:rgb(13,33,232)"&gt;
+         This text is having 5x dotted blue outline.
+      &lt;/p&gt;
+   &lt;/body&gt;
+&lt;/html&gt; 
+</pre> 
+<p>It will produce the following result &minus;</p>
+
+<h2>The outline Property</h2>
+<p>The <i>outline</i> property is a shorthand property that allows you to specify values for any of the three properties discussed previously in any order but in a single statement.</p>
+<p>Here is an example &minus;</p>
+<div class="demo-view">
+<a href="http://tpcg.io/g3TtGo" target="_blank" rel="nofollow" class="demo"><i class="fa-external-link"></i> Live Demo</a>
+</div>
+<pre class="prettyprint notranslate">
+&lt;html&gt;
+   &lt;head&gt;
+   &lt;/head&gt;
+   
+   &lt;body&gt;
+      &lt;p style = "outline:thin solid red;"&gt;
+         This text is having thin solid red outline.
+      &lt;/p&gt;
+      &lt;br /&gt;
+      
+      &lt;p style = "outline:thick dashed #009900;"&gt;
+         This text is having thick dashed green outline.
+      &lt;/p&gt;
+      &lt;br /&gt;
+      
+      &lt;p style = "outline:5px dotted rgb(13,33,232);"&gt;
+         This text is having 5x dotted blue outline.
+      &lt;/p&gt;
+   &lt;/body&gt;
+&lt;/html&gt; 
+</pre>
+
+<div class="clearer"></div>
+<p>There may be a case when an element's content might be larger than the amount of space allocated to it. For example, given width and height properties do not allow enough room to accommodate the content of the element.</p>
+<p>CSS provides a property called <i>overflow</i> which tells the browser what to do if the box's contents is larger than the box itself. This property can take one of the following values &minus;</p>
+<table class="table table-bordered">
+<tr>
+<th>Sr.No.</th>
+<th style="text-align:center;">Value &amp; Description</th>
+</tr>
+<tr>
+<td class="ts">1</td>
+<td><p><b>visible</b></p>
+<p>Allows the content to overflow the borders of its containing element.</p></td>
+</tr>
+<tr>
+<td class="ts">2</td>
+<td><p><b>hidden</b></p>
+<p>The content of the nested element is simply cut off at the border of the containing element and no scrollbars is visible.</p></td>
+</tr>
+<tr>
+<td class="ts">3</td>
+<td><p><b>scroll</b></p>
+<p>The size of the containing element does not change, but the scrollbars are added to allow the user to scroll to see the content.</p></td>
+</tr>
+<tr>
+<td class="ts">4</td>
+<td><p><b>auto</b></p>
+<p>The purpose is the same as scroll, but the scrollbar will be shown only if the content does overflow.</p></td>
+</tr>
+</table>
+<p>Here is an example &minus;</p>
+<div class="demo-view">
+<a href="http://tpcg.io/o418Zq" target="_blank" rel="nofollow" class="demo"><i class="fa-external-link"></i> Live Demo</a>
+</div>
+<pre class="prettyprint notranslate">
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;style type = "text/css"&gt;
+         .scroll {
+            display:block;
+            border: 1px solid red;
+            padding:5px;
+            margin-top:5px;
+            width:300px;
+            height:50px;
+            overflow:scroll;
+         }
+         .auto {
+            display:block;
+            border: 1px solid red;
+            padding:5px;
+            margin-top:5px;
+            width:300px;
+            height:50px;
+            overflow:auto;
+         }
+      &lt;/style&gt;
+   &lt;/head&gt;
+
+   &lt;body&gt;
+      &lt;p&gt;Example of scroll value:&lt;/p&gt;
+      &lt;div class = "scroll"&gt;
+         I am going to keep lot of content here just to show you how 
+         scrollbars works if there is an overflow in an element box. 
+         This provides your horizontal as well as vertical scrollbars.
+      &lt;/div&gt;
+      &lt;br /&gt;
+      
+      &lt;p&gt;Example of auto value:&lt;/p&gt;
+      
+      &lt;div class = "auto"&gt;
+         I am going to keep lot of content here just to show you how 
+         scrollbars works if there is an overflow in an element box. 
+         This provides your horizontal as well as vertical scrollbars.
+      &lt;/div&gt;
+   &lt;/body&gt;
+&lt;/html&gt; 
+</pre>
+    <br>
+
+    <footer>
+        <div class="container bg-secondary">
+        <div class="row">
+          <div class="col fw-bolder">
+            <br>
+           Contact us --
+           <br>
+            Email : 
+            <br>
+            admin@primathink.com
+        </div>
+        <div class="col fw-bold">
+          <br><br>
+          Phone : 
+          <br>
+          +91 23456789<br>
+          +91 29876421
+        </div>
+        <div class="col fw-bolder">
+          <br><br>
+          Address : 
+          <br>
+          Primathink WebD Head Office,<br>
+          Nagpur-440033,<br>
+          Maharashtra
+        </div>
+        <br>
+      </div>
+      <br>
+    </div>
+    </footer>
+    <br>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

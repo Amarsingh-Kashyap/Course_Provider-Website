@@ -1,0 +1,30 @@
+Task Assigned :
+
+Task 1:
+  With the use of HTML, CSS & Bootstrap knowledge do create design -> min 10-page PrimaThink Web Development Training Company Website.
+  Once you are done, share the complete zip file on internship@primathink.com .
+  {This task will result in your approach towards web development & requirement gathering phase of SDLC }
+  Duration: Submit before 23th Dec 2021
+  For design refer: https://getbootstrap.com/docs/5.0/examples/
+  Note: Do not use a readymade template
+
+So here, I have created 11 pages website for the task which covers parts of HTML, CSS & Bootstrap up to my knowledge.
+
+The pages are as follows :
+
+1)  index.html
+2) course.html
+3) faculty.html
+4) books.html
+5) html.html
+6) css.html
+7) javascript.html
+8) php.html
+9) bootstrap.html
+10) react.html
+11) contact.html
+
+I have completed the task and sent this to you on mail.
+
+Thanks & Regards,
+Amarsingh Kashyap
